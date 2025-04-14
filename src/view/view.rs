@@ -1,6 +1,7 @@
 // src/view/view.rs [renderer]
 
-use crate::helpers::*;
+use crate::helpers::two_sum;
+use crate::helpers::group_anagrams;
 // use std::io::{self};
 
 pub struct View;
