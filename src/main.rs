@@ -7,4 +7,5 @@ fn main() {
     let view = View::new();
     view.render_two_sum();
     view.render_group_anagrams();
+    view.render_contains_duplicates();
 }

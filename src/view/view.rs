@@ -2,6 +2,7 @@
 
 use crate::helpers::two_sum;
 use crate::helpers::group_anagrams;
+use crate::helpers::contains_duplicates;
 // use std::io::{self};
 
 pub struct View;
@@ -33,5 +34,10 @@ impl View {
         for group in grouped {
             println!("{:?}", group);
         }
+    }
+
+    pub fn render_contains_duplicates(&self) {
+        let nums = vec![1, 2, 3, 4, 5, 1];
+        println!("Contains duplicates: {}", contains_duplicates(&nums));
     }
 }
