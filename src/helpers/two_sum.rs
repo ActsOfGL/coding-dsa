@@ -1,5 +1,5 @@
 // src/helpers/two_sum.rs
-pub fn two_sum(nums: Vec<i32>, target: i32) -> Option<(usize, usize)> {
+pub fn two_sum(nums: &[i32], target: i32) -> Option<(usize, usize)> {
     use std::collections::HashMap;
     let mut map = HashMap::new();
 
