@@ -24,4 +24,13 @@ impl View {
             }
         }
     }
+
+    pub fn render_group_anagrams(&self) {
+        let words = vec!["eat", "tea", "tan", "ate", "nat", "bat"];
+        let grouped = group_anagrams(words);
+
+        for group in grouped {
+            println!("{:?}", group);
+        }
+    }
 }
