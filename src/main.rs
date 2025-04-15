@@ -1,6 +1,4 @@
-mod view;
-mod helpers;
-use view::View;
+use coding_dsa::View;
 
 fn main() {
     println!("Hello, world! - This is ActsOfGL");
