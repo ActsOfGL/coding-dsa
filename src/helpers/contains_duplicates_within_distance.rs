@@ -1,9 +1,9 @@
 // src/helpers/contains_duplicates_within_distance.rs
-
 pub fn contains_duplicates_within_distance(
   nums: &[i32],
   distance: i32,
 ) -> bool {
+    use std::collections::HashMap;
     let mut map = HashMap::new();
     for (i, num) in nums.iter().enumerate() {
         let index = i as i32;
@@ -19,7 +19,7 @@ pub fn contains_duplicates_within_distance(
 
 #[cfg(test)]
 mod tests {
-    super::*;
+    use super::*;
 
     #[test]
     fn test_contains_duplicates_within_distance_true() {
