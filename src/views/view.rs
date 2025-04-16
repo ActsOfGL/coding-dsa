@@ -3,7 +3,7 @@
 use crate::helpers::two_sum;
 use crate::helpers::group_anagrams;
 use crate::helpers::contains_duplicates;
-use crate::helpers::contains_duplicates_within_distance;
+use crate::helpers::has_nearby_duplicate;
 
 // use std::io::{self};
 
@@ -43,12 +43,12 @@ impl View {
         println!("Contains duplicates: {}", contains_duplicates(&nums));
     }
 
-    pub fn render_contains_duplicates_within_distance(&self) {
+    pub fn render_has_nearby_duplicate(&self) {
         let nums = vec![1, 0, 1, 1, 1, 1];
         let distance = 1;
         println!(
             "Contains duplicates within distance: {}",
-            contains_duplicates_within_distance(&nums, distance)
+            has_nearby_duplicate(&nums, distance)
         );
     }
 }

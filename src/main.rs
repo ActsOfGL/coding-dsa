@@ -6,5 +6,5 @@ fn main() {
     view.render_two_sum();
     view.render_group_anagrams();
     view.render_contains_duplicates();
-    view.render_contains_duplicates_within_distance();
+    view.render_has_nearby_duplicate();
 }
