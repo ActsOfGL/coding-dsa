@@ -4,6 +4,7 @@ use crate::helpers::two_sum;
 use crate::helpers::group_anagrams;
 use crate::helpers::contains_duplicates;
 use crate::helpers::has_nearby_duplicate;
+use crate::helpers::has_nearby_divisible_duplicate;
 
 // use std::io::{self};
 
@@ -47,8 +48,19 @@ impl View {
         let nums = vec![1, 0, 1, 1, 1, 1];
         let distance = 1;
         println!(
-            "Contains duplicates within distance: {}",
+            "Has duplicates within distance: {}",
             has_nearby_duplicate(&nums, distance)
+        );
+    }
+
+    pub fn render_has_nearby_divisible_duplicate(&self) {
+        let nums = vec![3, 0, 3, 3, 2, 1, 5, 6, 4];
+        let distance = 1;
+        let divisor = 3;
+
+        println!(
+            "Has divisible duplicates within distance: {}",
+            has_nearby_divisible_duplicate(&nums, distance, divisor)
         );
     }
 }

@@ -7,4 +7,5 @@ fn main() {
     view.render_group_anagrams();
     view.render_contains_duplicates();
     view.render_has_nearby_duplicate();
+    view.render_has_nearby_divisible_duplicate();
 }

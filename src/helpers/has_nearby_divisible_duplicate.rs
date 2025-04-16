@@ -1,6 +1,6 @@
 // src/helpers/has_nearby_divisible_duplicate
 pub fn has_nearby_divisible_duplicate(
-    nums: &[32],
+    nums: &[i32],
     distance: i32,
     divisor: i32,
 ) -> bool {
