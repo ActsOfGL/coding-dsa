@@ -20,3 +20,30 @@ pub fn has_nearby_divisible_duplicate(
     }
     false
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn returns_true_when_duplicate_divisible_within_distance() {
+        let nums = vec![3, 0, 3, 3, 2, 1, 5, 6, 4];
+        let distance = 1;
+        let divisor = 3;
+
+        let result = has_nearby_divisible_duplicate(&nums, distance, divisor);
+
+        assert!(result);
+    }
+
+    #[test]
+    fn returns_false_when_no_duplicate_divisible_within_distance() {
+        let nums = vec![1, 3, 6, 9];
+        let distance = 1;
+        let divisor = 3;
+
+        let result = has_nearby_divisible_duplicate(&nums, distance, divisor);
+
+        assert!(!result);
+    }
+}
