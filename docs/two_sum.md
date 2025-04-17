@@ -1,5 +1,3 @@
-## ✅ Solved Problems
-
 ### 1. Two Sum
 - **Difficulty:** Easy  
 - **Pattern:** HashMap  
