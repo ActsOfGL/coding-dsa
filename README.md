@@ -18,6 +18,10 @@ This project is a curated archive of Data Structures and Algorithms (DSA) proble
 
 ---
 
+## See docs folder -->
+
+---
+
 ### 🧩 More Coming Soon...
 Next challenges will build from these patterns to introduce sliding windows, prefix sums, two pointers, and more — leading up to hard-level problems.
 
