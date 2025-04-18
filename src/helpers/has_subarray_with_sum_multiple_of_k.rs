@@ -1,5 +1,5 @@
 // src/helpers/has_subarray_prefixsum_multiple.rs
-pub fn has_subarray_prefixsum_multiple(
+pub fn has_subarray_with_sum_multiple_of_k(
   nums: &[i32],
   target: i32,
 ) -> bool {
@@ -8,7 +8,7 @@ pub fn has_subarray_prefixsum_multiple(
     let mut prefix_sum = 0;
     map.insert(0, 0 as usize);
     for (i, &num) in nums.iter().enumerate() {
-        if (i == 0 && temp == 0) {
+        if (i == 0 && num == 0) {
            continue;
         }
         prefix_sum += num;
@@ -28,16 +28,16 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_has_subarray_prefixsum_multiple_true() {
+    fn test_has_subarray_with_sum_multiple_of_k_true() {
         let nums = vec![5, 3, 1, 7];
         let target = 6;
-        assert!(has_subarray_prefixsum_multiple(&nums, target));
+        assert!(has_subarray_with_sum_multiple_of_k(&nums, target));
     }
 
     #[test]
-    fn test_has_subarray_prefixsum_multiple_false() {
+    fn test_has_subarray_with_sum_multiple_of_k_false() {
         let nums = vec![2, 4, 3];
         let target = 5;
-        assert!(!has_subarray_prefixsum_multiple(&nums, target));  
+        assert!(!has_subarray_with_sum_multiple_of_k(&nums, target));  
     }
 }
