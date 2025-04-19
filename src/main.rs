@@ -8,4 +8,5 @@ fn main() {
     view.render_contains_duplicates();
     view.render_has_nearby_duplicate();
     view.render_has_nearby_divisible_duplicate();
+    view.render_has_subarray_with_sum_multiple_of_k();
 }
