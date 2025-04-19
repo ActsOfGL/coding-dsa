@@ -26,6 +26,7 @@ pub fn has_subarray_with_sum_multiple_of_k(
  * uses usize instead of isize
  * no need to insert before the loop
  * no else statement
+ * not a perfect solution, it missed an edge case for map.inser(0, 0) scenario
  * return true
  */
 pub fn has_subarray_with_sum_multiple_of_k_other_version(
