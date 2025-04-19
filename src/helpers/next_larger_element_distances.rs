@@ -1,5 +1,5 @@
 // src/helpers/next_larger_element_distances.rs
-fn next_larger_element_distances(nums: &[i32]) -> Vec<i32> {
+pub fn next_larger_element_distances(nums: &[i32]) -> Vec<i32> {
     let mut res = vec![0; nums.len()];
     let mut stack: Vec<usize> = Vec::new();
 

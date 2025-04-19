@@ -6,6 +6,7 @@ use crate::helpers::contains_duplicates;
 use crate::helpers::has_nearby_duplicate;
 use crate::helpers::has_nearby_divisible_duplicate;
 use crate::helpers::has_subarray_with_sum_multiple_of_k;
+use crate::helpers::next_larger_element_distances;
 
 // use std::io::{self};
 
@@ -72,6 +73,14 @@ impl View {
         println!(
             "Has a subarray with sum multiple of k: {}",
             has_subarray_with_sum_multiple_of_k(&nums, target)
+        );
+    }
+
+    pub fn render_next_larger_element_distances(&self) {
+        let temps = vec![73, 74, 75, 71, 69, 72, 76, 73]; // temparature examples
+        println!(
+            "Next larger element distances: {:?}",
+            next_larger_element_distances(&temps)
         );
     }
 }

@@ -33,6 +33,7 @@ pub fn has_subarray_with_sum_multiple_of_k_other_version(
     nums: &[i32],
     k: i32,
 ) -> bool {
+    use std::collections::HashMap;
     let mut map: HashMap<i32, usize> = HashMap::new();
     let mut prefix_sum = 0;
 
