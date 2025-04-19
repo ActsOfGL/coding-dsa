@@ -5,6 +5,7 @@ use crate::helpers::group_anagrams;
 use crate::helpers::contains_duplicates;
 use crate::helpers::has_nearby_duplicate;
 use crate::helpers::has_nearby_divisible_duplicate;
+use crate::helpers::has_subarray_with_sum_multiple_of_k;
 
 // use std::io::{self};
 
@@ -61,6 +62,16 @@ impl View {
         println!(
             "Has divisible duplicates within distance: {}",
             has_nearby_divisible_duplicate(&nums, distance, divisor)
+        );
+    }
+
+    pub fn render_has_subarray_with_sum_multiple_of_k(&self) {
+        let nums = vec![23, 2, 4, 6, 7];
+        let target = 6;
+
+        println!(
+            "Has a subarray with sum multiple of k: {}",
+            has_subarray_with_sum_multiple_of_k(&nums, target)
         );
     }
 }
