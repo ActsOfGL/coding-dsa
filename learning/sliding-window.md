@@ -45,4 +45,17 @@ new_sum = old_sum - nums[i - k] + nums[i]
 
  ---
 
- 
+## 🥊 When to Use What
+
+| Problem Type	                                    | Recommended Approach                 |
+|---------------------------------------------------|--------------------------------------|
+| "What's the max sum of any subarray of size k?"	  | Sliding Window                       |
+| "What’s the sum from index i to j, many times?"	  | Prefix Sum Array                     |
+| "All subarray sums of size k, multiple queries"	  | Prefix Sum                           |
+| "Streaming numbers, maintain a rolling window"	  | Sliding Window (with Queue or Deque) |
+
+## 📌 TL;DR
+Prefix Sum is like building a calculator for fast future lookups.
+
+Sliding Window is like reusing the last answer to get the next one faster — no extra memory.
+
