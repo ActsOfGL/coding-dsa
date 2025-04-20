@@ -6,3 +6,43 @@
 | Prefix Sum (map) | O(n) extra | O(n)   | Many queries over same array |
 
 ---
+
+## 🧪 1. Your Prefix Sum + Subtraction Approach
+💡 Concept:
+You wanted to precompute prefix sums, then subtract previous sums to get the sum of a window of size k.
+
+arr[i] = sum of elements from i-k+1 to i
+
+✅ Pros:
+Once prefix sums are computed, any subarray sum becomes an O(1) lookup!
+
+Useful when:
+ - You're asked many subarray sum queries
+ - You’re not sliding, just answering range questions fast
+
+❌ Cons:
+ - Requires an extra array (prefix sum array)
+ - More memory usage
+ - A bit overkill if you're only solving for one max sum of size k — in that case, you're doing extra work
+---
+
+## 🪟 2. Sliding Window Approach
+
+💡 Concept:
+You manually sum the first window, then:
+
+Slide 1 step right:
+new_sum = old_sum - nums[i - k] + nums[i]
+
+✅ Pros:
+ - No extra memory (just 2 variables)
+ - Fast: O(n)
+ - Best choice for single-pass problems like: "Find the max sum of any subarray of size k"
+
+❌ Cons:
+ - Doesn’t scale to multiple different k queries unless recomputed
+ - Only works if window size is fixed and known
+
+ ---
+
+ 
