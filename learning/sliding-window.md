@@ -54,8 +54,29 @@ new_sum = old_sum - nums[i - k] + nums[i]
 | "All subarray sums of size k, multiple queries"	  | Prefix Sum                           |
 | "Streaming numbers, maintain a rolling window"	  | Sliding Window (with Queue or Deque) |
 
+## 🧠 When to Use:
+Use Sliding Window when:
+ - ou're only doing one pass
+ - The task is: find max/min/fixed-sum in window of size k
+
+Use Prefix Sum when:
+ - You’re answering multiple range queries
+ - You need quick sum lookup from i..j
+
+## 🔍 Comparison Breakdown (see codes in helpers folder)
+| **Aspect**             | **Sliding Window**                             | **Prefix Sum**                                 |
+|------------------------|------------------------------------------------|------------------------------------------------|
+| **Lines of Code**      | Fewer lines                                    | Slightly longer due to prefix array            |
+| **Memory Usage**       | O(1) - constant (only 2 variables)             | O(n) - needs extra array                       |
+| **Initial Computation**| Just sum the first `k` elements                | Build prefix sums for all `n` elements         |
+| **Update Mechanism**   | Add new, subtract old element (rolling sum)    | Subtract two prefix values                     |
+| **Use Case**           | Best for one-pass, single `k` query            | Best for multiple range sum queries            |
+| **Clarity**            | Clear and linear flow                          | Requires understanding of prefix sum concept   |
+| **Performance**        | Faster in practice (less overhead)             | Slightly more overhead, but still O(n)         |
+
+
+
 ## 📌 TL;DR
 Prefix Sum is like building a calculator for fast future lookups.
 
 Sliding Window is like reusing the last answer to get the next one faster — no extra memory.
-

@@ -23,4 +23,3 @@ pub fn max_sum_sliding_window(
 
     max_sum
 }
-
