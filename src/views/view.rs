@@ -7,6 +7,7 @@ use crate::helpers::has_nearby_duplicate;
 use crate::helpers::has_nearby_divisible_duplicate;
 use crate::helpers::has_subarray_with_sum_multiple_of_k;
 use crate::helpers::next_larger_element_distances;
+use crate::helpers::max_sum_sliding_window;
 
 // use std::io::{self};
 
@@ -81,6 +82,14 @@ impl View {
         println!(
             "Next larger element distances: {:?}",
             next_larger_element_distances(&temps)
+        );
+    }
+
+    pub fn render_max_sum_sliding_window() {
+        let nums = vec![1, 2, 1, 5, 1, 3, 1];
+        println!(
+            "Max sum of subarray within an array: {}",
+            max_sum_sliding_window(&nums, 3)
         );
     }
 }
