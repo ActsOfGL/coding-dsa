@@ -10,4 +10,5 @@ fn main() {
     view.render_has_nearby_divisible_duplicate();
     view.render_has_subarray_with_sum_multiple_of_k();
     view.render_next_larger_element_distances();
+    view.render_max_sum_sliding_window();
 }

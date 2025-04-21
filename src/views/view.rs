@@ -85,7 +85,7 @@ impl View {
         );
     }
 
-    pub fn render_max_sum_sliding_window() {
+    pub fn render_max_sum_sliding_window(&self) {
         let nums = vec![1, 2, 1, 5, 1, 3, 1];
         println!(
             "Max sum of subarray within an array: {}",
