@@ -11,5 +11,5 @@ fn main() {
     view.render_has_subarray_with_sum_multiple_of_k();
     view.render_next_larger_element_distances();
     view.render_max_sum_sliding_window();
-    view.render_max_sum_sliding_window_with_prefix_sum();
+    view.render_max_sum_with_prefix_sum();
 }
