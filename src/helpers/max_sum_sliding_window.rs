@@ -46,4 +46,18 @@ mod tests {
         assert_eq!(max_sum_sliding_window(&nums, k), 9);
     }
 
+    #[test]
+    fn test_max_sum_sliding_window_zero_target() {
+        let nums: Vec<i32> = vec![1, 2, 1, 5, 1, 3, 1];
+        let k: usize = 0;
+        assert_eq!(max_sum_sliding_window(&nums, k), 0);
+    }
+
+    #[test]
+    fn test_max_sum_sliding_window_smaller_array() {
+        let nums: Vec<i32> = vec![1, 2, 1, 5, 1, 3, 1];
+        let k: usize = 15;
+        assert_eq!(max_sum_sliding_window(&nums, k), 0);
+    }
+
 }
