@@ -34,3 +34,16 @@ pub fn max_sum_sliding_window(
 
     max_sum
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_max_sum_sliding_window() {
+        let nums: Vec<i32> = vec![1, 2, 1, 5, 1, 3, 1];
+        let k: usize = 3;
+        assert_eq!(max_sum_sliding_window(&nums, k), 9);
+    }
+
+}
