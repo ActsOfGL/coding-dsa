@@ -87,7 +87,7 @@ impl View {
     }
 
     pub fn render_max_sum_sliding_window(&self) {
-        let nums = vec![1, 2, 1, 5, 1, 3, 1];
+        let nums: Vec<i32> = vec![1, 2, 1, 5, 1, 3, 1];
         println!(
             "Max sum of subarray within an array using sliding window: {}",
             max_sum_sliding_window(&nums, 3)
@@ -95,7 +95,7 @@ impl View {
     }
 
     pub fn render_max_sum_sliding_window_with_prefix_sum(&self) {
-        let nums = vec![1, 2, 1, 5, 1, 3, 1];
+        let nums: Vec<i32> = vec![1, 2, 1, 5, 1, 3, 1];
         println!(
             "Max sum of subarray within an array using prefix sum: {}",
             max_sum_with_prefix_sum(&nums, 3)
