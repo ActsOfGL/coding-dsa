@@ -8,6 +8,7 @@ use crate::helpers::has_nearby_divisible_duplicate;
 use crate::helpers::has_subarray_with_sum_multiple_of_k;
 use crate::helpers::next_larger_element_distances;
 use crate::helpers::max_sum_sliding_window;
+use crate::helpers::max_sum_with_prefix_sum;
 
 // use std::io::{self};
 
@@ -88,8 +89,16 @@ impl View {
     pub fn render_max_sum_sliding_window(&self) {
         let nums = vec![1, 2, 1, 5, 1, 3, 1];
         println!(
-            "Max sum of subarray within an array: {}",
+            "Max sum of subarray within an array using sliding window: {}",
             max_sum_sliding_window(&nums, 3)
+        );
+    }
+
+    pub fn render_max_sum_sliding_window_with_prefix_sum(&self) {
+        let nums = vec![1, 2, 1, 5, 1, 3, 1];
+        println!(
+            "Max sum of subarray within an array using prefix sum: {}",
+            max_sum_with_prefix_sum(&nums, 3)
         );
     }
 }
