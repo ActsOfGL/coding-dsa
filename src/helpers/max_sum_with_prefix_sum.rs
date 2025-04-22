@@ -19,3 +19,29 @@ pub fn max_sum_with_prefix_sum(nums: &[i32], k: usize) -> i32 {
 
     max_sum
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_max_sum_with_prefix_sum() {
+        let nums: Vec<i32> = vec![1, 2, 1, 5, 1, 3, 1];
+        let k: usize = 3;
+        assert_eq!(max_sum_with_prefix_sum(&nums, k), 9);
+    }
+
+    #[test]
+    fn test_max_sum_with_prefix_sum_zero_target() {
+        let nums: Vec<i32> = vec![1, 2, 1, 5, 1, 3, 1];
+        let k: usize = 0;
+        assert_eq!(max_sum_with_prefix_sum(&nums, k), 0);
+    }
+
+    #[test]
+    fn test_max_sum_with_prefix_sum_smaller_array() {
+        let nums: Vec<i32> = vec![1, 2, 1, 5, 1, 3, 1];
+        let k: usize = 15;
+        assert_eq!(max_sum_with_prefix_sum(&nums, k), 0);
+    }
+}
