@@ -94,7 +94,7 @@ impl View {
         );
     }
 
-    pub fn render_max_sum_sliding_window_with_prefix_sum(&self) {
+    pub fn render_max_sum_with_prefix_sum(&self) {
         let nums: Vec<i32> = vec![1, 2, 1, 5, 1, 3, 1];
         println!(
             "Max sum of subarray within an array using prefix sum: {}",
