@@ -17,7 +17,7 @@ pub fn max_sum_sliding_window(
       * }
       */
 
-    let mut max_sum = current_sum;
+    let mut max_sum: i32 = current_sum;
 
     for i in k..nums.len() {
         current_sum = current_sum + nums[i] - nums[i - k];
