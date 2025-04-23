@@ -1,5 +1,8 @@
 // src/helpers/two_sum.rs
-pub fn two_sum(nums: &[i32], target: i32) -> Option<(usize, usize)> {
+pub fn two_sum(
+    nums: &[i32],
+    target: i32,
+) -> Option<(usize, usize)> {
     use std::collections::HashMap;
     let mut map: HashMap<&i32, usize>  = HashMap::new();
 
@@ -21,7 +24,7 @@ mod tests {
     #[test]
     fn test_two_sum_found() {
         let nums: Vec<i32> = vec![2, 7, 11, 15];
-        let target: i32= 9;
+        let target: i32 = 9;
         let result: Option<(usize, usize)> = two_sum(&nums, target);
         assert_eq!(result, Some((0, 1)));
     }
@@ -29,7 +32,7 @@ mod tests {
     #[test]
     fn test_two_sum_not_found() {
         let nums: Vec<i32> = vec![1, 2, 3];
-        let target: i32= 10;
+        let target: i32 = 10;
         let result: Option<(usize, usize)> = two_sum(&nums, target);
         assert_eq!(result, None);
     }
