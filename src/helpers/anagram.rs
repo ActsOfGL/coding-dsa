@@ -29,7 +29,7 @@ mod tests {
             vec!["tan", "nat"],
             vec!["bat"]
         ].into_iter()
-           .map(|group| group.into_iter().map(String::from).collect())
+           .map(|group: Vec<&str>| group.into_iter().map(String::from).collect())
            .collect();
         let mut result: Vec<Vec<String>> = group_anagrams(words);
         for group in &mut expected {
