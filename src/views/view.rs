@@ -49,8 +49,8 @@ impl View {
     }
 
     pub fn render_has_nearby_duplicate(&self) {
-        let nums = vec![1, 0, 1, 1, 1, 1];
-        let distance = 1;
+        let nums: Vec<i32> = vec![1, 0, 1, 1, 1, 1];
+        let distance: i32 = 1;
         println!(
             "Has duplicates within distance: {}",
             has_nearby_duplicate(&nums, distance)
