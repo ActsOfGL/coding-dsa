@@ -58,9 +58,9 @@ impl View {
     }
 
     pub fn render_has_nearby_divisible_duplicate(&self) {
-        let nums = vec![3, 0, 3, 3, 2, 1, 5, 6, 4];
-        let distance = 1;
-        let divisor = 3;
+        let nums: Vec<i32> = vec![3, 0, 3, 3, 2, 1, 5, 6, 4];
+        let distance: i32 = 1;
+        let divisor: i32 = 3;
 
         println!(
             "Has divisible duplicates within distance: {}",
