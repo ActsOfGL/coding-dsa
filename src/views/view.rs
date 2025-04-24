@@ -21,8 +21,8 @@ impl View {
 
     // test renderer for the two_sum problem
     pub fn render_two_sum(&self) {
-        let nums = vec![2, 7, 11, 15];
-        let target = 9;
+        let nums: Vec<i32> = vec![2, 7, 11, 15];
+        let target: i32 = 9;
 
         match two_sum(&nums, target) {
             Some((a, b)) => {
