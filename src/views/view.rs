@@ -69,8 +69,8 @@ impl View {
     }
 
     pub fn render_has_subarray_with_sum_multiple_of_k(&self) {
-        let nums = vec![23, 2, 4, 6, 7];
-        let target = 6;
+        let nums: Vec<i32> = vec![23, 2, 4, 6, 7];
+        let target: i32 = 6;
 
         println!(
             "Has a subarray with sum multiple of k: {}",
