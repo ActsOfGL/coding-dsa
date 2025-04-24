@@ -44,7 +44,7 @@ impl View {
     }
 
     pub fn render_contains_duplicates(&self) {
-        let nums = vec![1, 2, 3, 4, 5, 1];
+        let nums: Vec<i32> = vec![1, 2, 3, 4, 5, 1];
         println!("Contains duplicates: {}", contains_duplicates(&nums));
     }
 
