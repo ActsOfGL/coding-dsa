@@ -9,6 +9,7 @@ use crate::helpers::has_subarray_with_sum_multiple_of_k;
 use crate::helpers::next_larger_element_distances;
 use crate::helpers::max_sum_sliding_window;
 use crate::helpers::max_sum_with_prefix_sum;
+use crate::helpers::get_length_of_shortest_window;
 
 // use std::io::{self};
 
@@ -99,6 +100,16 @@ impl View {
         println!(
             "Max sum of subarray within an array using prefix sum: {}",
             max_sum_with_prefix_sum(&nums, 3)
+        );
+    }
+
+    pub fn render_get_length_of_shortest_window(&self) {
+        let logs = vec![20, 30, 50, 90, 80, 20];
+        let k = 3;
+        let threshold = 60;
+        println!(
+            "Shortest length of the sliding window: {}",
+            get_length_of_shortest_window(&logs, k, threshold)
         );
     }
 }
