@@ -29,3 +29,30 @@ pub fn get_length_of_shortest_window(
         min_len
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_shortest_window() {
+        let logs = vec![20, 30, 50, 90, 80, 20];
+        let k = 3;
+        let threshold = 60;
+        assert_eq!(
+          get_length_of_shortest_window(&logs, k, threshold),
+          2
+        );
+    }
+
+    #[test]
+    fn test_shortest_window_empty() {
+        let logs = Vec::new();
+        let k = 3;
+        let threshold = 60;
+        assert_eq!(
+          get_length_of_shortest_window(&logs, k, threshold),
+          -1
+        );
+    }
+}
