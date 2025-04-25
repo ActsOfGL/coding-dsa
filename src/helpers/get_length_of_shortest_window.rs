@@ -36,9 +36,9 @@ mod tests {
 
     #[test]
     fn test_shortest_window() {
-        let logs = vec![20, 30, 50, 90, 80, 20];
-        let k = 3;
-        let threshold = 60;
+        let logs: Vec<i32> = vec![20, 30, 50, 90, 80, 20];
+        let k: usize = 3;
+        let threshold: i32 = 60;
         assert_eq!(
           get_length_of_shortest_window(&logs, k, threshold),
           2
@@ -47,9 +47,9 @@ mod tests {
 
     #[test]
     fn test_shortest_window_empty() {
-        let logs = Vec::new();
-        let k = 3;
-        let threshold = 60;
+        let logs: Vec<i32> = Vec::new();
+        let k: usize = 3;
+        let threshold: i32 = 60;
         assert_eq!(
           get_length_of_shortest_window(&logs, k, threshold),
           -1
