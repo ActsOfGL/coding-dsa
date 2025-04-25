@@ -12,4 +12,5 @@ fn main() {
     view.render_next_larger_element_distances();
     view.render_max_sum_sliding_window();
     view.render_max_sum_with_prefix_sum();
+    view.render_get_length_of_shortest_window();
 }
