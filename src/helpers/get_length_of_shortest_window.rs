@@ -4,15 +4,15 @@ pub fn get_length_of_shortest_window(
     k: usize,
     threshold: i32,
 ) -> i32 {
-    let mut left = 0;
-    let mut sum = 0;
-    let mut min_len = i32::MAX;
+    let mut left: usize = 0;
+    let mut sum: i32 = 0;
+    let mut min_len: i32 = i32::MAX;
 
     for right in 0..logs.len() {
         sum += logs[right];
 
         while right - left + 1 >= k {
-            let window_len = right - left + 1;
+            let window_len: usize = right - left + 1;
             if sum > (threshold * window_len as i32) {
                 min_len = min_len.min(window_len as i32);
             }
