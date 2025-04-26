@@ -20,6 +20,7 @@ pub fn get_max_stable_session_count(
 #[cfg(test)]
 mod tests {
     use super::*;
+
     #[test]
     fn test_get_max_stable_session_count() {
         let logs = vec![20, 30, 50, 90, 80, 20];
@@ -29,6 +30,18 @@ mod tests {
             60
           ),
           4
+        );
+    }
+
+    #[test]
+    fn test_get_max_stable_session_count_empty() {
+        let logs = Vec::new();
+        assert_eq!(
+          get_max_stable_session_count(
+            &logs,
+            60
+          ),
+          0
         );
     }
 }
