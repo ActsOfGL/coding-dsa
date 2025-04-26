@@ -80,7 +80,7 @@ impl View {
     }
 
     pub fn render_next_larger_element_distances(&self) {
-        let temps = vec![73, 74, 75, 71, 69, 72, 76, 73]; // temparature examples
+        let temps: Vec<i32> = vec![73, 74, 75, 71, 69, 72, 76, 73]; // temparature examples
         println!(
             "Next larger element distances: {:?}",
             next_larger_element_distances(&temps)
