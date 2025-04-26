@@ -10,6 +10,7 @@ pub mod next_larger_element_distances;
 pub mod max_sum_sliding_window;
 pub mod max_sum_with_prefix_sum;
 pub mod get_length_of_shortest_window;
+pub mod get_max_stable_session_count;
 
 // add other helper functions here
 pub use two_sum::two_sum;
@@ -22,3 +23,4 @@ pub use next_larger_element_distances::next_larger_element_distances;
 pub use max_sum_sliding_window::max_sum_sliding_window;
 pub use max_sum_with_prefix_sum::max_sum_with_prefix_sum;
 pub use get_length_of_shortest_window::get_length_of_shortest_window;
+pub use get_max_stable_session_count::get_max_stable_session_count;
