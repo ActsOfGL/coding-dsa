@@ -23,23 +23,19 @@ mod tests {
 
     #[test]
     fn test_get_max_stable_session_count() {
-        let logs = vec![20, 30, 50, 90, 80, 20];
-        assert_eq!(
-          get_max_stable_session_count(
-            &logs,
-            60
-          ),
-          4
-        );
+        let logs = vec![20, 10, 5, 25, 15, 5];
+        let threshold = 40;
+        assert_eq!(get_max_stable_session_count(&logs, threshold), 3);
     }
 
     #[test]
     fn test_get_max_stable_session_count_empty() {
         let logs = Vec::new();
+        let threshold = 40;
         assert_eq!(
           get_max_stable_session_count(
             &logs,
-            60
+            threshold,
           ),
           0
         );
