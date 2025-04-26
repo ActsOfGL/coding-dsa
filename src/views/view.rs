@@ -104,9 +104,9 @@ impl View {
     }
 
     pub fn render_get_length_of_shortest_window(&self) {
-        let logs = vec![20, 30, 50, 90, 80, 20];
-        let k = 3;
-        let threshold = 60;
+        let logs: Vec<i32> = vec![20, 30, 50, 90, 80, 20];
+        let k: usize = 3;
+        let threshold: i32 = 60;
         println!(
             "Shortest length of the sliding window: {}",
             get_length_of_shortest_window(&logs, k, threshold)
