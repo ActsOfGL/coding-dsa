@@ -115,8 +115,8 @@ impl View {
     }
 
     pub fn render_get_max_stable_session_count(&self) {
-        let sessions = vec![20, 10, 5, 25, 15, 5];
-        let threshold:= 40;
+        let sessions: Vec<i32> = vec![20, 10, 5, 25, 15, 5];
+        let threshold:i32 = 40;
         println!(
             "Max stable session count: {}",
             get_max_stable_session_count(&sessions, threshold)
