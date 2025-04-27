@@ -115,8 +115,8 @@ impl View {
     }
 
     pub fn render_get_max_stable_session_count() {
-        let sessions = vec![];
-        let threshold = 5;
+        let sessions = vec![20, 10, 5, 25, 15, 5];
+        let threshold:= 40;
         println!(
             "Max stable session count: {}",
             get_max_stable_session_count(&sessions, threshold)
