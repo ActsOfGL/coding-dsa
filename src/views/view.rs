@@ -113,4 +113,13 @@ impl View {
             get_length_of_shortest_window(&logs, k, threshold)
         );
     }
+
+    pub fn render_get_max_stable_session_count() {
+        let sessions = vec![];
+        let threshold = 5;
+        println!(
+            "Max stable session count: {}",
+            get_max_stable_session_count(&sessions, threshold)
+        );
+    }
 }
