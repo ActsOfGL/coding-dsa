@@ -40,9 +40,9 @@ pub fn max_sum_sliding_window_of_k_adaptive(
     nums: &[i32],
     k: usize,
 ) -> i32 {
-    let mut left = 0;
-    let mut sum = 0;
-    let mut max_sum = 0;
+    let mut left: usize = 0;
+    let mut sum: i32 = 0;
+    let mut max_sum: i32 = 0;
 
     for right in 0..nums.len() {
         sum += nums[right];
