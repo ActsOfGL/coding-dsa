@@ -48,7 +48,7 @@ pub fn max_sum_sliding_window_of_k_adaptive(
         sum += nums[right];
 
         if right - left + 1 > k { // depends if > or < or with =
-            sum -= sum[left];
+            sum -= nums[left];
             left += 1;
         }
         max_sum = max_sum.max(sum);
