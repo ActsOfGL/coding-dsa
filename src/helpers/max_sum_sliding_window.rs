@@ -81,4 +81,15 @@ mod tests {
         assert_eq!(max_sum_sliding_window(&nums, k), 0);
     }
 
+    #[test]
+    fn test_max_sum_sliding_window_of_k_adaptive() {
+        let logs = vec![5, 1, 3, 7, 2, 6, 4];
+        let k = 15;
+        assert_eq!(
+            max_sum_sliding_window_of_k_adaptive(&logs, k),
+            15
+        ); // subarray [3,7,2] -> sum = 12, [7,2,6] -> sum = 15
+    }
+    
+
 }
