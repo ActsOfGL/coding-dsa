@@ -7,7 +7,7 @@ pub mod has_nearby_duplicate;
 pub mod has_nearby_divisible_duplicate;
 pub mod has_subarray_with_sum_multiple_of_k;
 pub mod next_larger_element_distances;
-pub mod max_sum_sliding_window;;
+pub mod max_sum_sliding_window;
 pub mod max_sum_with_prefix_sum;
 pub mod get_length_of_shortest_window;
 pub mod get_max_stable_session_count;
