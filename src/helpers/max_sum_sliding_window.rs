@@ -90,6 +90,15 @@ mod tests {
             15
         ); // subarray [3,7,2] -> sum = 12, [7,2,6] -> sum = 15
     }
+
+    fn test_max_sum_sliding_window_of_k_adaptive_zero() {
+        let logs: Vec<i32> = vec![5, 1, 3, 7, 2, 6, 4];
+        let k: usize = 0;
+        assert_eq!(
+            max_sum_sliding_window_of_k_adaptive(&logs, k),
+            0
+        ); // subarray [3,7,2] -> sum = 12, [7,2,6] -> sum = 15
+    }
     
 
 }
