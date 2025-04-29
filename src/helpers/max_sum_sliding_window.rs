@@ -91,6 +91,7 @@ mod tests {
         ); // subarray [3,7,2] -> sum = 12, [7,2,6] -> sum = 15
     }
 
+    #[test]
     fn test_max_sum_sliding_window_of_k_adaptive_zero() {
         let logs: Vec<i32> = vec![5, 1, 3, 7, 2, 6, 4];
         let k: usize = 0;
