@@ -24,3 +24,34 @@ pub fn count_subarrays_with_sum_k_positives_only(
 
     count
 }
+
+pub fn count_subarrays_with_sum_k_any_values(
+    logs: &[i32],
+    k: i32,
+) -> i32 {
+    let mut prefix_sum = 0;
+    let mut count = 0;
+    let mut map = HashMap::new();
+
+    map.insert(0, 1); // 👈 Needed to handle subarrays starting from index 0
+
+    for &num in logs {
+        prefix_sum += num;
+
+        if let Some(&freq) = map.get(&(prefix_sum - k)) {
+            count += freq;
+        }
+
+        // 👇 Non-shortcut version (for understanding)
+        // if map.contains_key(&prefix_sum) {
+        //     let current = map.get(&prefix_sum).unwrap();
+        //     map.insert(prefix_sum, current + 1);
+        // } else {
+        //     map.insert(prefix_sum, 1);
+        // }
+
+        *map.entry(prefix_sum).or_insert(0) += 1;
+    }
+
+    count
+}
