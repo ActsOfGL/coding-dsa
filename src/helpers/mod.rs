@@ -27,3 +27,4 @@ pub use max_sum_with_prefix_sum::max_sum_with_prefix_sum;
 pub use get_length_of_shortest_window::get_length_of_shortest_window;
 pub use get_max_stable_session_count::get_max_stable_session_count;
 pub use count_subarrays_with_sum_k::count_subarrays_with_sum_k_positives_only;
+pub use count_subarrays_with_sum_k::count_subarrays_with_sum_k_any_values;
