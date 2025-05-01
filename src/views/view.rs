@@ -145,4 +145,13 @@ impl View {
             count_subarrays_with_sum_k_positives_only(&logs, k)
         );
     }
+
+    pub fn render_count_subarrays_with_sum_k_any_values(&self) {
+        let logs = vec![1, -2, -3, 4, 5, 6, -7, 8, -9, 10];
+        let k = 15;
+        println!(
+            "Count of subarrays with sum k (any values): {}",
+            count_subarrays_with_sum_k_any_values(&logs, k)
+        );
+    }
 }
