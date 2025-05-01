@@ -1,4 +1,4 @@
-# ✅ Question 1: Subarray Count with Positive Values Only
+# ✅ Question: Subarray Count with Positive Values Only
 
 ## 🧠 Description:
 Given an array of only positive integers, count how many contiguous subarrays have a sum equal to k. A subarray can have a length of 1 up to the full length of the array.
