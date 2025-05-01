@@ -29,9 +29,9 @@ pub fn count_subarrays_with_sum_k_any_values(
     logs: &[i32],
     k: i32,
 ) -> i32 {
-    let mut prefix_sum = 0;
-    let mut count = 0;
-    let mut map = HashMap::new();
+    let mut prefix_sum: i32 = 0;
+    let mut count: i32 = 0;
+    let mut map: HashMap<i32, i32> = HashMap::new();
 
     map.insert(0, 1); // 👈 Needed to handle subarrays starting from index 0
 
