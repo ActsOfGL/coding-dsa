@@ -136,4 +136,13 @@ impl View {
             get_max_stable_session_count(&sessions, threshold)
         );
     }
+
+    pub fn render_count_subarrays_with_sum_k_positives_only(&self) {
+        let logs = vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let k = 15;
+        println!(
+            "Count of subarrays with sum k (positives only): {}",
+            count_subarrays_with_sum_k_positives_only(&logs, k)
+        );
+    }
 }
