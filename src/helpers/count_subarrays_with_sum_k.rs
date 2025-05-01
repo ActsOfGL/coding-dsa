@@ -62,8 +62,8 @@ mod tests {
 
     #[test]
     fn test_count_subarrays_with_sum_k_positives_only() {
-        let logs = vec![1, 2, 3, 4, 5];
-        let k = 10;
+        let logs: Vec<i32> = vec![1, 2, 3, 4, 5];
+        let k: i32 = 10;
         assert_eq!(
             count_subarrays_with_sum_k_positives_only(
                 &logs,
