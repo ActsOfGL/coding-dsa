@@ -55,3 +55,21 @@ pub fn count_subarrays_with_sum_k_any_values(
 
     count
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_count_subarrays_with_sum_k_positives_only() {
+        let logs = vec![1, 2, 3, 4, 5];
+        let k = 10;
+        assert_eq!(
+            count_subarrays_with_sum_k_positives_only(
+                &logs,
+                k
+            ),
+            1
+        );
+    }
+}
