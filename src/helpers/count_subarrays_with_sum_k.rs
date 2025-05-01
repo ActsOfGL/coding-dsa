@@ -75,8 +75,8 @@ mod tests {
 
     #[test]
     fn test_count_subarrays_with_sum_k_any_values() {
-        let logs = vec![6, -2, -3, 4, 5];
-        let k = 10;
+        let logs: Vec<i32> = vec![6, -2, -3, 4, 5];
+        let k: i32 = 10;
         assert_eq!(
             count_subarrays_with_sum_k_any_values(
                 &logs,
