@@ -15,4 +15,5 @@ fn main() {
     view.render_max_sum_with_prefix_sum();
     view.render_get_length_of_shortest_window();
     view.render_get_max_stable_session_count();
+    view.render_count_subarrays_with_sum_k_positives_only();
 }
