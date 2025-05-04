@@ -82,6 +82,20 @@ pub fn count_valid_subarray_sum_of_k_optimized(
         }
 
         // Update maps
+        /*
+            if let Some(value) = prefix_sum_count.get_mut(&curr_sum) {
+                *value += 1;
+            } else {
+                prefix_sum_count.insert(curr_sum, 1);
+            }
+
+            // Only save first occurrence of curr_sum
+            if !prefix_sum_to_index.contains_key(&curr_sum) {
+                prefix_sum_to_index.insert(curr_sum, i);
+            }
+         * The code above is the non shortcut version
+         * of the code below for understanding
+         */
         prefix_sum_count
             .entry(curr_sum)
             .and_modify(|c: &mut i32| *c += 1)
