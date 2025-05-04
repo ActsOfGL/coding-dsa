@@ -39,11 +39,11 @@ pub fn count_valid_subarray_sum_of_k_optimized(
     k: i32,
     min_len: usize,
 ) -> i32 {
-    let mut prefix_sum_to_index = HashMap::new();
-    let mut prefix_sum_count= HashMap::new();
+    let mut prefix_sum_to_index: HashMap<i32, usize> = HashMap::new();
+    let mut prefix_sum_count: HashMap<i32, i32>= HashMap::new();
     
-    let mut curr_sum = 0;
-    let mut count = 0;
+    let mut curr_sum: i32 = 0;
+    let mut count: i32 = 0;
 
     // Initialize: sum 0 at index -1
     prefix_sum_to_index.insert(0, usize::MAX);  // We'll treat usize::MAX as -1
@@ -52,7 +52,7 @@ pub fn count_valid_subarray_sum_of_k_optimized(
     for (i, &num) in logs.iter().enumerate() {
         curr_sum += num;
 
-        let required_sum = curr_sum - k;
+        let required_sum: i32 = curr_sum - k;
 
         // We only count previous prefix sums that occurred far enough back
         if let Some(&j) = prefix_sum_to_index.get(&required_sum) {
@@ -64,7 +64,7 @@ pub fn count_valid_subarray_sum_of_k_optimized(
         // Update maps
         prefix_sum_count
             .entry(curr_sum)
-            .and_modify(|c| *c += 1)
+            .and_modify(|c: &mut i32| *c += 1)
             .or_insert(1);
 
         prefix_sum_to_index.insert(curr_sum, i);
