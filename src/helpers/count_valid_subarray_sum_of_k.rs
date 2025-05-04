@@ -55,6 +55,26 @@ pub fn count_valid_subarray_sum_of_k_optimized(
         let required_sum: i32 = curr_sum - k;
 
         // We only count previous prefix sums that occurred far enough back
+        /*
+            if let Some(&earliest_index) = prefix_sum_to_index.get(&required_sum) {
+                let valid = if earliest_index == usize::MAX {
+                    i >= min_len
+                } else {
+                    i >= earliest_index + min_len
+                };
+
+                if valid {
+                    // Get how many times that required sum occurred
+                    let ways = match prefix_sum_count.get(&required_sum) {
+                        Some(&v) => v,
+                        None => 0,
+                    };
+                    count += ways;
+                }
+            }
+         * The code above is the non shortcut version
+         * of the code below for understanding
+         */
         if let Some(&j) = prefix_sum_to_index.get(&required_sum) {
             if j == usize::MAX || i >= j + min_len {
                 count += prefix_sum_count.get(&required_sum).copied().unwrap_or(0);
