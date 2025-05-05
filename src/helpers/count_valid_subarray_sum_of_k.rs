@@ -106,3 +106,46 @@ pub fn count_valid_subarray_sum_of_k_optimized(
 
     count
 }
+
+// easier to read version of the above function
+fn get_count_valid_subarray_sum_of_k(logs: &[i32], k: i32, min_len: usize) -> i32 {
+    let mut prefix_sum_count = HashMap::new(); // stores how many times a prefix_sum has appeared
+    let mut prefix_sum_index= HashMap::new(); // stores the *latest index* where that prefix_sum appeared
+
+    let mut count = 0;       // how many valid subarrays we found
+    let mut prefix_sum = 0;  // our running sum from left to right
+
+    prefix_sum_count.insert(0, 1); // Base case: prefix sum = 0 has occurred once before we start
+    prefix_sum_index.insert(0, usize::MAX); // Special case to simulate index = -1
+
+    for (i, &log) in logs.iter().enumerate() {
+        prefix_sum += log;
+
+        // Let's say we want a subarray that ends at i and sums to k.
+        // That means there was some prefix_sum before called (prefix_sum - k).
+        let required = prefix_sum - k;
+
+        if let Some(&j) = prefix_sum_index.get(&required) {
+            // j = the index where prefix_sum - k last appeared
+            // i - j = length of subarray
+            if j == usize::MAX || i >= j + min_len {
+                // It's valid only if subarray length is >= min_len
+                if let Some(&freq) = prefix_sum_count.get(&required) {
+                    count += freq;
+                }
+            }
+        }
+
+        // Update prefix_sum_count map
+        if let Some(cnt) = prefix_sum_count.get_mut(&prefix_sum) {
+            *cnt += 1;
+        } else {
+            prefix_sum_count.insert(prefix_sum, 1);
+        }
+
+        // Update prefix_sum_index with latest index for this sum
+        prefix_sum_index.insert(prefix_sum, i);
+    }
+
+    count
+}
