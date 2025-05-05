@@ -108,9 +108,13 @@ pub fn count_valid_subarray_sum_of_k_optimized(
 }
 
 // easier to read version of the above function
-fn get_count_valid_subarray_sum_of_k(logs: &[i32], k: i32, min_len: usize) -> i32 {
-    let mut prefix_sum_count = HashMap::new(); // stores how many times a prefix_sum has appeared
-    let mut prefix_sum_index= HashMap::new(); // stores the *latest index* where that prefix_sum appeared
+fn get_count_valid_subarray_sum_of_k(
+    logs: &[i32],
+    k: i32,
+    min_len: usize,
+) -> i32 {
+    let mut prefix_sum_count: HashMap<i32, i32> = HashMap::new(); // stores how many times a prefix_sum has appeared
+    let mut prefix_sum_index: HashMap<i32, usize> = HashMap::new(); // stores the *latest index* where that prefix_sum appeared
 
     let mut count = 0;       // how many valid subarrays we found
     let mut prefix_sum = 0;  // our running sum from left to right
