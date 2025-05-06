@@ -43,8 +43,10 @@ pub fn count_valid_subarrays_of_max_min_difference(
         }
 
         if end + 1 - start >= min_len {
-            count += (end + 1 - start + 1 - min_len + 1) as i32;
+            count += (end - start - min_len + 2) as i32;
         }
     }
+
     count
+
 }
