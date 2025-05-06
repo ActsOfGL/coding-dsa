@@ -1,7 +1,7 @@
-// src/helpers/count_valid_subarray_max_minus_min.rs
+// src/helpers/count_valid_subarrays_of_max_min_difference.rs
 use std::collections::VecDeque;
 
-pub fn count_valid_subarray_max_minus_min(
+pub fn count_valid_subarrays_of_max_min_difference(
     nums: &[i32],
     k: i32,
     min_len: usize,
