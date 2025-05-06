@@ -13,6 +13,7 @@ pub mod get_length_of_shortest_window;
 pub mod get_max_stable_session_count;
 pub mod count_subarrays_with_sum_k;
 pub mod count_valid_subarray_sum_of_k;
+pub mod count_valid_subarray_max_minus_min;
 
 // add other helper functions here
 pub use two_sum::two_sum;
