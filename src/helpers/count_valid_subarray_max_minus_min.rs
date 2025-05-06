@@ -32,7 +32,7 @@ pub fn count_valid_subarray_max_minus_min(
 
         min_deque.push_back(end);
 
-        while nums[*max_deque.front().unwrap()] - nums[*min_deque.fron().unwrap()] > k {
+        while nums[*max_deque.front().unwrap()] - nums[*min_deque.front().unwrap()] > k {
             if max_deque.front() == Some(&start) {
                 max_deque.pop_front();
             }
