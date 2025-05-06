@@ -32,3 +32,4 @@ pub use count_subarrays_with_sum_k::count_subarrays_with_sum_k_positives_only;
 pub use count_subarrays_with_sum_k::count_subarrays_with_sum_k_any_values;
 pub use count_valid_subarray_sum_of_k::count_valid_subarray_sum_of_k;
 pub use count_valid_subarray_sum_of_k::count_valid_subarray_sum_of_k_optimized;
+pub use count_valid_subarray_max_minus_min::count_valid_subarray_max_minus_min;
