@@ -49,3 +49,19 @@ pub fn count_subarrays_with_bounded_diff(
     count
 
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_count_subarrays_with_bounded_diff() {
+        let nums = vec![4, 2, 5, 1, 6];
+        let k = 3;
+        let min_len = 2;
+        assert_eq!(
+            count_subarrays_with_bounded_diff(&nums, k, min_len),
+            3
+        );
+    }
+}
