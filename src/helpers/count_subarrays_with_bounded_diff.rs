@@ -6,10 +6,10 @@ pub fn count_subarrays_with_bounded_diff(
     k: i32,
     min_len: usize,
 ) -> i32 {
-    let mut count = 0;
-    let mut max_deque = VecDeque::new();
-    let mut min_deque = VecDeque::new();
-    let mut start = 0; // starting index
+    let mut count: i32 = 0;
+    let mut max_deque: VecDeque<usize> = VecDeque::new();
+    let mut min_deque: VecDeque<usize> = VecDeque::new();
+    let mut start: usize = 0; // starting index
 
     for end in 0..nums.len() {
         while let Some(&last) = max_deque.back() {
