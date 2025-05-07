@@ -43,10 +43,9 @@ pub fn count_subarrays_with_bounded_diff(
         }
 
         if end + 1 - start >= min_len {
-            count += (end - start - min_len + 2) as i32;
+            count += ((end - start + 1) - min_len + 1) as i32;
         }
     }
-
     count
 
 }
