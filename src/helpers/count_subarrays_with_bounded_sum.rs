@@ -26,3 +26,16 @@ pub fn count_subarrays_with_bounded_sum(
     }
     count
 }
+
+#[cfg(test)]
+mod tests {
+    use supper::*;
+
+    #[test]
+    fn test_count_subarrays_with_bounded_sum_basic() {
+        let nums = vec![2, 1, 4, 5, 1];
+        let k = 5;
+        let min_len = 2;
+        assert_eq!(count_subarrays_with_bounded_sum(&nums, k, min_len), 3);
+    }
+}
