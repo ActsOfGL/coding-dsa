@@ -33,9 +33,9 @@ mod tests {
 
     #[test]
     fn test_count_subarrays_with_bounded_sum_basic() {
-        let nums = vec![2, 1, 4, 5, 1];
-        let k = 5;
-        let min_len = 2;
+        let nums: Vec<i32> = vec![2, 1, 4, 5, 1];
+        let k: i32 = 5;
+        let min_len: usize = 2;
         assert_eq!(count_subarrays_with_bounded_sum(&nums, k, min_len), 3);
     }
 }
