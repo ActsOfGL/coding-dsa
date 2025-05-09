@@ -26,10 +26,16 @@ Explanation: The valid subarrays are [2, 3], [1, 4], [3, 1, 4, -1, 2], [4, -1, 2
 
 ====================================================
 
-### Interviewee Thought Process:
-Approach: Use the Prefix Sum + HashMap method to efficiently count subarrays with the desired sum and length constraints.
-Prefix Sum Logic: Track prefix sums to detect subarrays without needing to recompute sums repeatedly.
-Handling Length Constraint: Use the difference between prefix sums and index tracking to filter out subarrays that don't meet the length requirement.
-Complexity Analysis:
-Time Complexity: O(n) since each index is processed in constant time for prefix sum and hashmap lookups.
-Space Complexity: O(n) for the prefix sum hashmap.
+# 💡 Interviewee Thought Process:
+### Approach:
+Use the Prefix Sum + HashMap method to efficiently count subarrays with the desired sum and length constraints.
+
+### Prefix Sum Logic:
+Track prefix sums to detect subarrays without needing to recompute sums repeatedly.
+
+### Handling Length Constraint:
+Use the difference between prefix sums and index tracking to filter out subarrays that don't meet the length requirement.
+
+### Complexity Analysis:
+ - Time Complexity: O(n) since each index is processed in constant time for prefix sum and hashmap lookups.
+ - Space Complexity: O(n) for the prefix sum hashmap.
