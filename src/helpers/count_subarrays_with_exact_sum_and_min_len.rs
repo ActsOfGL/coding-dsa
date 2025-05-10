@@ -1,9 +1,13 @@
 // src/helpers/count_subarrays_with_exact_sum_and_min_len.rs
 use std::collections::HashMap;
 
-pub fn count_subarrays_with_exact_sum_and_min_len(nums: &[i32], k: i32, min_len: usize) -> i32 {
-    let mut prefix_sum = 0;
-    let mut count = 0;
+pub fn count_subarrays_with_exact_sum_and_min_len(
+    nums: &[i32],
+    k: i32,
+    min_len: usize,
+) -> i32 {
+    let mut prefix_sum: i32 = 0;
+    let mut count: i32 = 0;
     let mut prefix_count: HashMap<i32, Vec<usize>> = HashMap::new();
     prefix_count.entry(0).or_insert(vec![-1]);
     
