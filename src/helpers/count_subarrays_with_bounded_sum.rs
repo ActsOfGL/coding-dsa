@@ -29,7 +29,7 @@ pub fn count_subarrays_with_bounded_sum(
 
 #[cfg(test)]
 mod tests {
-    use supper::*;
+    use super::*;
 
     #[test]
     fn test_count_subarrays_with_bounded_sum_basic() {
