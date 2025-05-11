@@ -8,7 +8,7 @@ pub fn count_subarrays_with_exact_sum_and_min_len(
 ) -> i32 {
     let mut prefix_sum: i32 = 0;
     let mut count: i32 = 0;
-    let mut prefix_count: HashMap<i32, Vec<usize>> = HashMap::new();
+    let mut prefix_count: HashMap<i32, Vec<isize>> = HashMap::new();
     prefix_count.entry(0).or_insert(vec![-1]);
     
     for (end, &num) in nums.iter().enumerate() {
