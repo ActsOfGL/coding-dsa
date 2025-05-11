@@ -14,6 +14,7 @@ pub mod get_max_stable_session_count;
 pub mod count_subarrays_with_sum_k;
 pub mod count_valid_subarray_sum_of_k;
 pub mod count_subarrays_with_bounded_diff;
+pub mod count_subarrays_with_bounded_sum;
 
 // add other helper functions here
 pub use two_sum::two_sum;
