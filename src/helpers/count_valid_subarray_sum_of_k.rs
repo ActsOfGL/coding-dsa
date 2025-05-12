@@ -7,17 +7,16 @@ pub fn count_valid_subarray_sum_of_k(
     k: i32,
     min_len: isize,
 ) -> i32 {
-    
     let mut map: HashMap<i32, Vec<isize>> = HashMap::new();
     let mut sum: i32 = 0;
     let mut count: i32 = 0;
-    
+
     map.entry(0).or_insert(vec![-1]); // handle subarrays starting at index 0
-    
+
     for (i, &log) in logs.iter().enumerate() {
         let i: isize = i as isize; // from usize to isize
         sum += log;
-        
+
         if let Some(indices) = map.get(&(sum - k)) {
             for &j in indices {
                 // (i -j + 1) >= min_len as isize or
@@ -26,10 +25,10 @@ pub fn count_valid_subarray_sum_of_k(
                 }
             }
         }
-        
+
         map.entry(sum).or_insert(Vec::new()).push(i);
     }
-    
+
     count
 }
 
@@ -41,7 +40,6 @@ pub fn count_valid_subarray_sum_of_k_optimized(
 ) -> i32 {
     let mut prefix_sum_to_index: HashMap<i32, usize> = HashMap::new();
     let mut prefix_sum_count: HashMap<i32, i32>= HashMap::new();
-    
     let mut curr_sum: i32 = 0;
     let mut count: i32 = 0;
 
@@ -115,7 +113,6 @@ fn get_count_valid_subarray_sum_of_k(
 ) -> i32 {
     let mut prefix_sum_count: HashMap<i32, i32> = HashMap::new(); // stores how many times a prefix_sum has appeared
     let mut prefix_sum_index: HashMap<i32, usize> = HashMap::new(); // stores the *latest index* where that prefix_sum appeared
-
     let mut count = 0;       // how many valid subarrays we found
     let mut prefix_sum = 0;  // our running sum from left to right
 
