@@ -159,4 +159,14 @@ impl View {
             count_subarrays_with_sum_k_any_values(&logs, k)
         );
     }
+
+    pub fn render_count_valid_subarray_sum_of_k(&self) {
+        let nums = vec![1, -1, 5, -2, 3];
+        let k = 3;
+        let min_len = 2;
+        println!(
+            "Count of valid subarrays with sum k: {}",
+            count_valid_subarray_sum_of_k(&nums, k, min_len),
+        );
+    }
 }
