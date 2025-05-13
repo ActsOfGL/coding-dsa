@@ -169,4 +169,19 @@ impl View {
             count_valid_subarray_sum_of_k(&nums, k, min_len),
         );
     }
+
+    pub fn render_count_valid_subarray_sum_of_k_optimized(&self) {
+        let nums= vec![1, -1, 5, -2, 3];
+        let k = 3;
+        let min_len = 2;
+        println!(
+            "Count of valid subarrays with sum k optimized: {}",
+            count_valid_subarray_sum_of_k_optimized(&nums, k, min_len),
+        );
+    }
+
+//     use crate::helpers::count_valid_subarray_sum_of_k_optimized;
+// use crate::helpers::count_subarrays_with_bounded_diff;
+// use crate::helpers::count_subarrays_with_bounded_sum;
+// use crate::helpers::count_subarrays_with_exact_sum_and_min_len;
 }
