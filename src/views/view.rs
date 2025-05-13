@@ -171,9 +171,9 @@ impl View {
     }
 
     pub fn render_count_valid_subarray_sum_of_k_optimized(&self) {
-        let nums= vec![1, -1, 5, -2, 3];
-        let k = 3;
-        let min_len = 2;
+        let nums: Vec<i32>= vec![1, -1, 5, -2, 3];
+        let k: i32 = 3;
+        let min_len: usize = 2;
         println!(
             "Count of valid subarrays with sum k optimized: {}",
             count_valid_subarray_sum_of_k_optimized(&nums, k, min_len),
