@@ -180,7 +180,16 @@ impl View {
         );
     }
 
-//     use crate::helpers::count_valid_subarray_sum_of_k_optimized;
+    pub fn render_count_subarrays_with_bounded_diff(&self) {
+        let nums= vec![1, -2, -3, 4, 5, 6, -7, 8, -9, 10];
+        let k = 3;
+        let min_len = 2;
+        println!(
+            "Count subarrays with bounded diff: {}",
+            count_subarrays_with_bounded_diff(&nums, k, min_len),
+        );
+    }
+
 // use crate::helpers::count_subarrays_with_bounded_diff;
 // use crate::helpers::count_subarrays_with_bounded_sum;
 // use crate::helpers::count_subarrays_with_exact_sum_and_min_len;
