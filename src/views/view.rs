@@ -191,9 +191,9 @@ impl View {
     }
 
     pub fn render_count_subarrays_with_bounded_sum(&self) {
-        let nums = vec![1, -2, -3, 4, 5, 6, -7, 8, -9, 10];
-        let k = 3;
-        let min_len = 2;
+        let nums: Vec<i32> = vec![1, -2, -3, 4, 5, 6, -7, 8, -9, 10];
+        let k: i32 = 3;
+        let min_len: usize = 2;
         println!(
             "Count subarrays with bounded sum: {}",
             count_subarrays_with_bounded_sum(&nums, k, min_len),
