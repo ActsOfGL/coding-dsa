@@ -200,6 +200,14 @@ impl View {
         );
     }
 
-// use crate::helpers::count_subarrays_with_bounded_sum;
-// use crate::helpers::count_subarrays_with_exact_sum_and_min_len;
+    pub fn render_count_subarrays_with_exact_sum_and_min_len(&self) {
+        let nums= vec![1, -2, 4, 5, 6, -7, 8, 10];
+        let k= 3;
+        let min_len = 2;
+        println!(
+            "Count subarrays with exact sum and with minimun length: {}",
+            count_subarrays_with_exact_sum_and_min_len(&nums, k, min_len),
+        );
+    }
+
 }
