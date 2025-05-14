@@ -55,7 +55,10 @@ impl View {
 
     pub fn render_contains_duplicates(&self) {
         let nums: Vec<i32> = vec![1, 2, 3, 4, 5, 1];
-        println!("Contains duplicates: {}", contains_duplicates(&nums));
+        println!(
+            "Contains duplicates: {}",
+            contains_duplicates(&nums),
+        );
     }
 
     pub fn render_has_nearby_duplicate(&self) {
@@ -63,7 +66,7 @@ impl View {
         let distance: i32 = 1;
         println!(
             "Has duplicates within distance: {}",
-            has_nearby_duplicate(&nums, distance)
+            has_nearby_duplicate(&nums, distance),
         );
     }
 
@@ -74,7 +77,7 @@ impl View {
 
         println!(
             "Has divisible duplicates within distance: {}",
-            has_nearby_divisible_duplicate(&nums, distance, divisor)
+            has_nearby_divisible_duplicate(&nums, distance, divisor),
         );
     }
 
@@ -84,7 +87,7 @@ impl View {
 
         println!(
             "Has a subarray with sum multiple of k: {}",
-            has_subarray_with_sum_multiple_of_k(&nums, target)
+            has_subarray_with_sum_multiple_of_k(&nums, target),
         );
     }
 
@@ -92,7 +95,7 @@ impl View {
         let temps: Vec<i32> = vec![73, 74, 75, 71, 69, 72, 76, 73]; // temparature examples
         println!(
             "Next larger element distances: {:?}",
-            next_larger_element_distances(&temps)
+            next_larger_element_distances(&temps),
         );
     }
 
@@ -101,7 +104,7 @@ impl View {
         let k: usize = 3;
         println!(
             "Max sum of subarray within an array using sliding window: {}",
-            max_sum_sliding_window(&nums, k)
+            max_sum_sliding_window(&nums, k),
         );
     }
 
@@ -110,7 +113,7 @@ impl View {
         let k: usize = 3;
         println!(
             "Max sum of subarray within an array using sliding window of k (adaptive): {}",
-            max_sum_sliding_window_of_k_adaptive(&nums, k)
+            max_sum_sliding_window_of_k_adaptive(&nums, k),
         );
     }
 
@@ -119,7 +122,7 @@ impl View {
         let k: usize = 3;
         println!(
             "Max sum of subarray within an array using prefix sum: {}",
-            max_sum_with_prefix_sum(&nums, k)
+            max_sum_with_prefix_sum(&nums, k),
         );
     }
 
@@ -129,7 +132,7 @@ impl View {
         let threshold: i32 = 60;
         println!(
             "Shortest length of the sliding window: {}",
-            get_length_of_shortest_window(&logs, k, threshold)
+            get_length_of_shortest_window(&logs, k, threshold),
         );
     }
 
@@ -138,7 +141,7 @@ impl View {
         let threshold:i32 = 40;
         println!(
             "Max stable session count: {}",
-            get_max_stable_session_count(&sessions, threshold)
+            get_max_stable_session_count(&sessions, threshold),
         );
     }
 
@@ -147,7 +150,7 @@ impl View {
         let k: i32 = 15;
         println!(
             "Count of subarrays with sum k (positives only): {}",
-            count_subarrays_with_sum_k_positives_only(&logs, k)
+            count_subarrays_with_sum_k_positives_only(&logs, k),
         );
     }
 
@@ -156,7 +159,7 @@ impl View {
         let k: i32 = 15;
         println!(
             "Count of subarrays with sum k (any values): {}",
-            count_subarrays_with_sum_k_any_values(&logs, k)
+            count_subarrays_with_sum_k_any_values(&logs, k),
         );
     }
 
