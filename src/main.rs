@@ -17,4 +17,5 @@ fn main() {
     view.render_get_max_stable_session_count();
     view.render_count_subarrays_with_sum_k_positives_only();
     view.render_count_subarrays_with_sum_k_any_values();
+    view.render_count_valid_subarray_sum_of_k();
 }
