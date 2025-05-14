@@ -190,8 +190,8 @@ impl View {
         );
     }
 
-        pub fn render_count_subarrays_with_bounded_sum(&self) {
-        let nums= vec![1, -2, -3, 4, 5, 6, -7, 8, -9, 10];
+    pub fn render_count_subarrays_with_bounded_sum(&self) {
+        let nums = vec![1, -2, -3, 4, 5, 6, -7, 8, -9, 10];
         let k = 3;
         let min_len = 2;
         println!(
