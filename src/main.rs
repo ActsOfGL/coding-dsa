@@ -20,4 +20,5 @@ fn main() {
     view.render_count_valid_subarray_sum_of_k();
     view.render_count_valid_subarray_sum_of_k_optimized();
     view.render_count_subarrays_with_bounded_diff();
+    view.render_count_subarrays_with_bounded_sum();
 }
