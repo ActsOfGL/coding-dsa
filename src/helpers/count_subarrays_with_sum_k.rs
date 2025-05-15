@@ -67,7 +67,7 @@ mod tests {
         assert_eq!(
             count_subarrays_with_sum_k_positives_only(
                 &logs,
-                k
+                k,
             ),
             1
         );
@@ -80,7 +80,7 @@ mod tests {
         assert_eq!(
             count_subarrays_with_sum_k_any_values(
                 &logs,
-                k
+                k,
             ),
             1
         );
