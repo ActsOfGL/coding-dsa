@@ -67,9 +67,9 @@ mod tests {
 
     #[test]
     fn test_count_subarrays_with_bounded_diff_zero_output() {
-        let nums = vec![1, 2];
-        let k = 5;
-        let min_len = 3;
+        let nums: Vec<i32> = vec![1, 2];
+        let k: i32 = 5;
+        let min_len: usize = 3;
         assert_eq!(
             count_subarrays_with_bounded_diff(&nums, k, min_len),
             0
