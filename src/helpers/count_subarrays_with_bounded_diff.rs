@@ -61,7 +61,7 @@ mod tests {
         let min_len: usize = 2;
         assert_eq!(
             count_subarrays_with_bounded_diff(&nums, k, min_len),
-            3
+            3,
         );
     }
 
@@ -72,7 +72,7 @@ mod tests {
         let min_len: usize = 3;
         assert_eq!(
             count_subarrays_with_bounded_diff(&nums, k, min_len),
-            0
+            0,
         );
     }
 }
