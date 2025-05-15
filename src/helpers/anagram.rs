@@ -27,7 +27,7 @@ mod tests {
         let mut expected: Vec<Vec<String>> = vec![
             vec!["eat", "tea", "ate"],
             vec!["tan", "nat"],
-            vec!["bat"]
+            vec!["bat"],
         ].into_iter()
            .map(|group: Vec<&str>| group.into_iter().map(String::from).collect())
            .collect();
