@@ -27,7 +27,7 @@ mod tests {
         let distance: i32 = 1;
         assert_eq!(
             has_nearby_duplicate(&nums, distance),
-          true
+            true,
         );
     }
 
@@ -37,31 +37,43 @@ mod tests {
         let distance: i32 = 2;
         assert_eq!(
             has_nearby_duplicate(&nums, distance),
-          false
+            false,
         );
     }
 
     #[test]
     fn test_empty_array() {
         let nums: Vec<i32> = vec![];
-        assert_eq!(has_nearby_duplicate(&nums, 1), false);
+        assert_eq!(
+            has_nearby_duplicate(&nums, 1),
+            false,
+        );
     }
 
     #[test]
     fn test_single_element() {
         let nums: Vec<i32> = vec![42];
-        assert_eq!(has_nearby_duplicate(&nums, 1), false);
+        assert_eq!(
+            has_nearby_duplicate(&nums, 1),
+            false,
+        );
     }
 
     #[test]
     fn test_exact_distance_match() {
         let nums: Vec<i32> = vec![1, 2, 3, 1];
-        assert_eq!(has_nearby_duplicate(&nums, 3), true);
+        assert_eq!(
+            has_nearby_duplicate(&nums, 3),
+            true,
+        );
     }
 
     #[test]
     fn test_distance_zero() {
         let nums: Vec<i32> = vec![1, 2, 3, 1];
-        assert_eq!(has_nearby_duplicate(&nums, 0), false);
+        assert_eq!(
+            has_nearby_duplicate(&nums, 0),
+            false,
+        );
     }
 }
