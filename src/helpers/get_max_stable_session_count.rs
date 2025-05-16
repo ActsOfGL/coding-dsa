@@ -28,9 +28,9 @@ mod tests {
         assert_eq!(
             get_max_stable_session_count(
                 &logs,
-                threshold
+                threshold,
             ),
-            3
+            3,
         );
     }
 
@@ -43,7 +43,7 @@ mod tests {
             &logs,
             threshold,
           ),
-          0
+          0,
         );
     }
 }
