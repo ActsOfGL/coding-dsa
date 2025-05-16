@@ -19,4 +19,9 @@ mod tests {
         let nums: Vec<i32> = vec![1, 2, 3, 4, 5, 1];
         assert_eq!(contains_duplicates(&nums), true);
     }
+
+    fn test_contains_duplicates_false() {
+        let nums = vec![1, 2, 3, 4, 5, 6];
+        assert_eq!(contains_duplicates(&nums), false);
+    }
 }
