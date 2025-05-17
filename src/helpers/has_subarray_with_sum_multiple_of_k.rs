@@ -68,6 +68,11 @@ mod tests {
     fn test_has_subarray_with_sum_multiple_of_k_false() {
         let nums: Vec<i32> = vec![2, 4, 3];
         let target: i32 = 5;
-        assert!(!has_subarray_with_sum_multiple_of_k(&nums, target));  
+        assert!(
+            !has_subarray_with_sum_multiple_of_k(
+                &nums,
+                target,
+            ),
+        );  
     }
 }
