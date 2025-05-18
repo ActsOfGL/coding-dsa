@@ -54,6 +54,12 @@ mod tests {
     fn test_max_sum_with_prefix_sum_smaller_array() {
         let nums: Vec<i32> = vec![1, 2, 1, 5, 1, 3, 1];
         let k: usize = 15;
-        assert_eq!(max_sum_with_prefix_sum(&nums, k), 0);
+        assert_eq!(
+            max_sum_with_prefix_sum(
+                &nums,
+                k,
+            ),
+            0,
+        );
     }
 }
