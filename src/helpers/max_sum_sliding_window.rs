@@ -104,8 +104,11 @@ mod tests {
         let logs: Vec<i32> = vec![5, 1, 3, 7, 2, 6, 4];
         let k: usize = 15;
         assert_eq!(
-            max_sum_sliding_window_of_k_adaptive(&logs, k),
-            15
+            max_sum_sliding_window_of_k_adaptive(
+                &logs,
+                k,
+            ),
+            15,
         ); // subarray [3,7,2] -> sum = 12, [7,2,6] -> sum = 15
     }
 
