@@ -28,7 +28,13 @@ mod tests {
     fn test_max_sum_with_prefix_sum() {
         let nums: Vec<i32> = vec![1, 2, 1, 5, 1, 3, 1];
         let k: usize = 3;
-        assert_eq!(max_sum_with_prefix_sum(&nums, k), 9);
+        assert_eq!(
+            max_sum_with_prefix_sum(
+                &nums,
+                k,
+            ),
+            9,
+        );
     }
 
     #[test]
