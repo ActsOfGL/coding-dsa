@@ -148,7 +148,7 @@ mod tests {
         let k = 6;
         assert_eq!(
             get_subarray_length_bound_diff_at_most_k(&activities, k),
-            0
+            4
         );
     }
 }
