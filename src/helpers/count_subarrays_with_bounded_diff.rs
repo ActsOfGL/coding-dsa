@@ -53,7 +53,10 @@ pub fn count_subarrays_with_bounded_diff(
 /**
  * @returns: the length of the longest subarray with a maximum difference of `k` at most
  */
-pub fn get_subarray_length_bound_diff_at_most_k(nums: &[i32], k: i32) -> usize {
+pub fn get_subarray_length_bound_diff_at_most_k(
+    nums: &[i32],
+    k: i32,
+) -> usize {
     let mut max_deque= VecDeque::new();
     let mut min_deque= VecDeque::new();
     let mut left = 0;
