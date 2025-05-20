@@ -57,10 +57,10 @@ pub fn get_subarray_length_bound_diff_at_most_k(
     nums: &[i32],
     k: i32,
 ) -> usize {
-    let mut max_deque= VecDeque::new();
-    let mut min_deque= VecDeque::new();
-    let mut left = 0;
-    let mut max_len = 0;
+    let mut max_deque: VecDeque<usize> = VecDeque::new();
+    let mut min_deque: VecDeque<usize> = VecDeque::new();
+    let mut left: usize = 0;
+    let mut max_len: usize = 0;
 
     for (right, &num) in nums.iter().enumerate() {
         // Maintain decreasing order for max_deque
