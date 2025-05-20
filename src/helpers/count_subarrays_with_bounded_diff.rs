@@ -151,7 +151,10 @@ mod tests {
         let activities = [3, -1, 4, 2, 6, -2, 5, -3, 7];
         let k = 6;
         assert_eq!(
-            get_subarray_length_bound_diff_at_most_k(&activities, k),
+            get_subarray_length_bound_diff_at_most_k(
+                &activities,
+                k,
+            ),
             4,
         );
     }
