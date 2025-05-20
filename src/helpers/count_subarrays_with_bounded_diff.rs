@@ -137,7 +137,11 @@ mod tests {
         let k: i32 = 5;
         let min_len: usize = 3;
         assert_eq!(
-            count_subarrays_with_bounded_diff(&nums, k, min_len),
+            count_subarrays_with_bounded_diff(
+                &nums,
+                k,
+                min_len,
+            ),
             0,
         );
     }
@@ -148,7 +152,7 @@ mod tests {
         let k = 6;
         assert_eq!(
             get_subarray_length_bound_diff_at_most_k(&activities, k),
-            4
+            4,
         );
     }
 }
