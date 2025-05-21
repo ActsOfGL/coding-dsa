@@ -161,8 +161,8 @@ mod tests {
 
     #[test]
     fn test_get_subarray_length_bound_diff_at_most_k_zero_output() {
-        let activities = Vec::new();
-        let k = 6;
+        let activities: Vec<i32> = Vec::new();
+        let k: i32 = 6;
         assert_eq!(
             get_subarray_length_bound_diff_at_most_k(
                 &activities,
