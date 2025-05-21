@@ -35,5 +35,6 @@ pub use count_subarrays_with_sum_k::count_subarrays_with_sum_k_any_values;
 pub use count_valid_subarray_sum_of_k::count_valid_subarray_sum_of_k;
 pub use count_valid_subarray_sum_of_k::count_valid_subarray_sum_of_k_optimized;
 pub use count_subarrays_with_bounded_diff::count_subarrays_with_bounded_diff;
+pub use count_subarrays_with_bounded_diff::get_subarray_length_bound_diff_at_most_k;
 pub use count_subarrays_with_bounded_sum::count_subarrays_with_bounded_sum;
 pub use count_subarrays_with_exact_sum_and_min_len::count_subarrays_with_exact_sum_and_min_len;
