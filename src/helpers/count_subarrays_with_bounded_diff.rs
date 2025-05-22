@@ -102,20 +102,6 @@ pub fn get_subarray_length_bound_diff_at_most_k(
     max_len
 }
 
-/**
- * Sample usage of get_subarray_length_bound_diff_at_most_k
- * 
- * fn main() {
-    let activities = [3, -1, 4, 2, 6, -2, 5, -3, 7];
-    let k = 6;
-    println!(
-        "Longest subarray with max-min <= {}: {}",
-        k,
-        get_subarray_length_bound_diff_at_most_k(&activities, k)
-    );
-  }
- */
-
 #[cfg(test)]
 mod tests {
     use super::*;
