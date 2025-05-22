@@ -200,7 +200,7 @@ impl View {
         println!(
             "Longest subarray with max-min <= {}: {}",
             k,
-            get_subarray_length_bound_diff_at_most_k(&activities, k)
+            get_subarray_length_bound_diff_at_most_k(&activities, k),
         );
     }
 
