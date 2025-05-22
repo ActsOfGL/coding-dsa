@@ -197,8 +197,8 @@ impl View {
     }
 
     pub fn render_get_subarray_length_bound_diff_at_most_k(&self) {
-        let activities = vec![3, -1, 4, 2, 6, -2, 5, -3, 7];
-        let k = 6;
+        let activities: Vec<i32> = vec![3, -1, 4, 2, 6, -2, 5, -3, 7];
+        let k: i32 = 6;
         println!(
             "Longest subarray with max-min <= {}: {}",
             k,
