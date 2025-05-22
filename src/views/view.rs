@@ -1,5 +1,7 @@
 // src/view/view.rs [renderer]
 
+use std::vec;
+
 use crate::helpers::two_sum;
 use crate::helpers::group_anagrams;
 use crate::helpers::contains_duplicates;
@@ -195,7 +197,7 @@ impl View {
     }
 
     pub fn render_get_subarray_length_bound_diff_at_most_k(&self) {
-        let activities = [3, -1, 4, 2, 6, -2, 5, -3, 7];
+        let activities = vec![3, -1, 4, 2, 6, -2, 5, -3, 7];
         let k = 6;
         println!(
             "Longest subarray with max-min <= {}: {}",
