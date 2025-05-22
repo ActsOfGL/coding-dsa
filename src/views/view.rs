@@ -194,6 +194,16 @@ impl View {
         );
     }
 
+    pub fn render_get_subarray_length_bound_diff_at_most_k(&self) {
+        let activities = [3, -1, 4, 2, 6, -2, 5, -3, 7];
+        let k = 6;
+        println!(
+            "Longest subarray with max-min <= {}: {}",
+            k,
+            get_subarray_length_bound_diff_at_most_k(&activities, k)
+        );
+    }
+
     pub fn render_count_subarrays_with_bounded_sum(&self) {
         let nums: Vec<i32> = vec![1, -2, -3, 4, 5, 6, -7, 8, -9, 10];
         let k: i32 = 3;
