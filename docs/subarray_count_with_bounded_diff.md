@@ -38,14 +38,22 @@ To efficiently count all valid subarrays, I'll use a sliding window approach wit
 
 
 ====================================================
-# 🧠 Back on track studying
+# 📌 Back on track studying
 
 ### 🧠 Let's Decode the Trick
 When you're asked to count all valid subarrays, and not just the max length, you're entering this sub-pattern:
 
-🎯 Pattern:
-
+### 🎯 Pattern:
 Count of subarrays where condition holds using:
  - A sliding window
  - Monotonic deques (to maintain min and max)
  - Tricky subarray count logic
+
+### ✅ Key Insight
+If the window [left, right] is valid (i.e., max - min <= k), then:
+ - All subarrays that end at right and start at any i ∈ [left, right] are also valid.
+ - So, the number of new valid subarrays ending at right is right - left + 1.
+
+This is your missing piece.
+
+// subarray_count_with_bounded_diff
