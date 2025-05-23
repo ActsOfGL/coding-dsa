@@ -34,3 +34,8 @@ To efficiently count all valid subarrays, I'll use a sliding window approach wit
  - Count all valid subarrays within the current window that have a length of at least min_len.
  - Time Complexity: O(n) => Each element is added and removed from the deques at most once, resulting in linear time.
  - Space Complexity: O(n) => The deques can grow up to the length of the array in the worst case.
+
+
+
+====================================================
+# 🧠 Back on track studying
