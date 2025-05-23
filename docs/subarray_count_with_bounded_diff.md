@@ -56,4 +56,13 @@ If the window [left, right] is valid (i.e., max - min <= k), then:
 
 This is your missing piece.
 
+### 🔁 Process Breakdown
+ 1. Use max_deque and min_deque to track current window's max and min.
+ 2. Start with left = 0.
+ 3. Expand right via a loop.
+ 4. If max - min > k, then shrink from the left.
+ 5. Once window is valid again:
+    - All subarrays [left..=right], [left+1..=right], ..., [right..=right] are valid.
+    - So increment total count by right - left + 1.
+
 // subarray_count_with_bounded_diff
