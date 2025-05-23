@@ -39,3 +39,13 @@ To efficiently count all valid subarrays, I'll use a sliding window approach wit
 
 ====================================================
 # 🧠 Back on track studying
+
+### 🧠 Let's Decode the Trick
+When you're asked to count all valid subarrays, and not just the max length, you're entering this sub-pattern:
+
+🎯 Pattern:
+
+Count of subarrays where condition holds using:
+ - A sliding window
+ - Monotonic deques (to maintain min and max)
+ - Tricky subarray count logic
