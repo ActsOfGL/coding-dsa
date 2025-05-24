@@ -25,4 +25,10 @@ mod tests {
         let nums: Vec<i32> = vec![1, 2, 3, 4, 5, 6];
         assert_eq!(contains_duplicates(&nums), false);
     }
+
+    #[test]
+    fn test_contains_duplicates_empty() {
+        let nums = Vec::new();
+        assert_eq!(contains_duplicates(&nums), false);
+    }
 }
