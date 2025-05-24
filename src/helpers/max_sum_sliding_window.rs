@@ -124,6 +124,17 @@ mod tests {
             0,
         ); // subarray [3,7,2] -> sum = 12, [7,2,6] -> sum = 15
     }
-    
 
+    #[test]
+    fn test_max_sum_sliding_window_empty_array() {
+        let nums = Vec::new();
+        let k = 15;
+        assert_eq!(
+            max_sum_sliding_window(
+                &nums,
+                k,
+            ),
+            0,
+        );
+    }
 }
