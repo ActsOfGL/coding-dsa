@@ -52,10 +52,11 @@ mod tests {
     }
 
     #[test]
-    fn test_single_element() {
+    fn test_has_nearby_duplicate_single_element() {
         let nums: Vec<i32> = vec![42];
+        let distance = 1;
         assert_eq!(
-            has_nearby_duplicate(&nums, 1),
+            has_nearby_duplicate(&nums, distance),
             false,
         );
     }
