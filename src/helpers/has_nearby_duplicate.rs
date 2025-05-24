@@ -74,7 +74,7 @@ mod tests {
     #[test]
     fn test_has_nearby_duplicate_distance_zero() {
         let nums: Vec<i32> = vec![1, 2, 3, 1];
-        let distance = 0;
+        let distance: i32 = 0;
         assert_eq!(
             has_nearby_duplicate(&nums, distance),
             false,
