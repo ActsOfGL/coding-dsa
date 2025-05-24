@@ -28,7 +28,7 @@ mod tests {
 
     #[test]
     fn test_contains_duplicates_empty() {
-        let nums = Vec::new();
+        let nums: Vec<i32> = Vec::new();
         assert_eq!(contains_duplicates(&nums), false);
     }
 }
