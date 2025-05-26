@@ -127,8 +127,8 @@ mod tests {
 
     #[test]
     fn test_max_sum_sliding_window_empty_array() {
-        let nums = Vec::new();
-        let k = 15;
+        let nums: Vec<i32> = Vec::new();
+        let k: usize = 15;
         assert_eq!(
             max_sum_sliding_window(
                 &nums,
