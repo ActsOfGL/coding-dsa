@@ -140,7 +140,7 @@ mod tests {
 
     #[test]
     fn test_max_sum_sliding_window_of_k_adaptive_empty_array() {
-        let nums: Vec<i32> = vec![];
+        let nums: Vec<i32> = Vec::new(); // vec![];
         let k: usize = 5;
         assert_eq!(
             max_sum_sliding_window_of_k_adaptive(
