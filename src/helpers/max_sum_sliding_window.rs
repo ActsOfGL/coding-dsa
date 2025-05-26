@@ -137,4 +137,17 @@ mod tests {
             0,
         );
     }
+
+    #[test]
+    fn test_max_sum_sliding_window_of_k_adaptive_empty_array() {
+        let nums = vec![];
+        let k = 5;
+        assert_eq!(
+            max_sum_sliding_window_of_k_adaptive(
+                &nums,
+                k,
+            ),
+            0,
+        );
+    }
 }
