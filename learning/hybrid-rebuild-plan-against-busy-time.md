@@ -1,27 +1,26 @@
-🧭 Best Path Forward: Hybrid Rebuild Plan
+# 🧭 Best Path Forward: Hybrid Rebuild Plan
 
 Here’s what I recommend, tailored to your current state:
 1. Mini Deque Refresher (1–2 small drills)
-
     🔁 To rebuild your mental model of sliding window + monotonic deque
 
-These will be simple scenarios where you must maintain the window max or min as the window slides. No traps. Just reps to get back that intuition.
-2. Warm-up DSA Interview Variant (Easy → Medium)
+    These will be simple scenarios where you must maintain the window max or min as the window slides. No traps. Just reps to get back that intuition.
 
+2. Warm-up DSA Interview Variant (Easy → Medium)
     🎯 Light pressure, interview style, disguised pattern (you guess and adapt)
 
-Example: "Given a list of integers, find the length of the longest subarray where the absolute difference between any two elements is at most k."
-(Your job: recognize it's a sliding window + max-min variation — without being told.)
-3. Retro DSA Review (Previously failed ones)
+    Example: "Given a list of integers, find the length of the longest subarray where the absolute difference between any two elements is at most k."
+    (Your job: recognize it's a sliding window + max-min variation — without being told.)
 
+3. Retro DSA Review (Previously failed ones)
     🔁 Targeting problems where mental block was strong before (e.g., DSAa0025–28, or deque front cleanup)
 
-We go back to those exact problems, re-derive the logic together from scratch, then rebuild the code live.
-4. Gradual Return to New DSA Patterns
+    We go back to those exact problems, re-derive the logic together from scratch, then rebuild the code live.
 
+4. Gradual Return to New DSA Patterns
     🧠 Like Monotonic Stack with Intervals, Range Queries, Tree DP, etc.
 
-Once confidence returns, we’ll pick up new patterns and compound your learning.
+    Once confidence returns, we’ll pick up new patterns and compound your learning.
 
 
 ===========================================================
