@@ -26,27 +26,22 @@ Here’s what I recommend, tailored to your current state:
 ===========================================================
 
 ## 🧱 Phase 1: Recalibrate the Foundation (Sliding Window + Monotonic Deque)
-
     Goal: Master subarray patterns with min/max range control.
 
     [🔁 Warm-up] Count max-length subarray where max - min <= k
 
         ✅ You've attempted this.
-
         📍Next: walk through 2–3 different examples (I'll generate) with visual deque evolution.
 
     [🧮 Count all valid subarrays where max - min <= k]
 
         ✅ You're working through this now.
-
         📍Next: final walkthrough + edge cases + Rust polishing.
-
         🎯 Teaches dynamic window resizing and subarray counting logic.
 
     [🔄 Variation Challenge] Return the shortest valid subarray where max - min <= k]
 
         Adds a twist: shrinking fast is optimal.
-
         🎯 Builds intuition for two-pointer + greedy window control.
 
 ## 🧠 Phase 2: Strengthen Related Patterns (HashMap + Prefix Sum)
@@ -56,19 +51,16 @@ Here’s what I recommend, tailored to your current state:
     [🔗 Subarray sum equals k]
 
         Pattern: prefix sum + hashmap.
-
         🎯 Refresher for modular arithmetic reasoning.
 
     [📊 Subarray sum divisible by k with length ≥ X]
 
         Variation of the above with constraints.
-
         🎯 Forces you to reason about prefix remainder tracking.
 
     [🎣 Catch-up Retest] Given disguised prompts from 4–5 above
 
         I’ll reword previous questions like an interviewer would.
-
         🎯 Locks the patterns in with long-term memory recall.
 
 ## 🚀 Phase 3: Micro-Projects or Drill Days
@@ -78,13 +70,11 @@ Here’s what I recommend, tailored to your current state:
     [⚙️ Build a Subarray Visualizer CLI in Rust]
 
         Parses nums input, steps through each iteration of sliding window.
-
         🎯 Reinforces syntax, ownership, and stack mechanics.
 
     [📦 Rust practice drill] Write a reusable deque handler
 
         Handles push/pop for min/max with enums or traits.
-
         🎯 Boosts confidence in Rust data structure design.
 
 ## 🔁 Phase 4: The Mastery Loop (Weekly Rotating Focus)
@@ -94,8 +84,9 @@ Here’s what I recommend, tailored to your current state:
     [🎯 Weekly: 1-2 fresh DSA + 1 retest]
 
         Each new problem builds from what you’ve learned.
-
         🎯 You’ll revisit tough concepts from earlier in disguised formats.
+
+
 
 ### ⏳ Suggested Weekly Flow (if time is tight)
 Day	    --------------- Focus
