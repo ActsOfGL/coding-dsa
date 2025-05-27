@@ -25,7 +25,7 @@ Here’s what I recommend, tailored to your current state:
 
 ===========================================================
 
-🧱 Phase 1: Recalibrate the Foundation (Sliding Window + Monotonic Deque)
+## 🧱 Phase 1: Recalibrate the Foundation (Sliding Window + Monotonic Deque)
 
     Goal: Master subarray patterns with min/max range control.
 
@@ -49,7 +49,7 @@ Here’s what I recommend, tailored to your current state:
 
         🎯 Builds intuition for two-pointer + greedy window control.
 
-🧠 Phase 2: Strengthen Related Patterns (HashMap + Prefix Sum)
+## 🧠 Phase 2: Strengthen Related Patterns (HashMap + Prefix Sum)
 
     Goal: Revisit prefix sum and hashmaps through adjacent patterns.
 
@@ -71,7 +71,7 @@ Here’s what I recommend, tailored to your current state:
 
         🎯 Locks the patterns in with long-term memory recall.
 
-🚀 Phase 3: Micro-Projects or Drill Days
+## 🚀 Phase 3: Micro-Projects or Drill Days
 
     Goal: Break from DSA with Rust-focused code sprints.
 
@@ -87,7 +87,7 @@ Here’s what I recommend, tailored to your current state:
 
         🎯 Boosts confidence in Rust data structure design.
 
-🔁 Phase 4: The Mastery Loop (Weekly Rotating Focus)
+## 🔁 Phase 4: The Mastery Loop (Weekly Rotating Focus)
 
     Goal: Cement memory through spaced repetition and challenge cycles.
 
@@ -97,9 +97,9 @@ Here’s what I recommend, tailored to your current state:
 
         🎯 You’ll revisit tough concepts from earlier in disguised formats.
 
-⏳ Suggested Weekly Flow (if time is tight)
-Day	Focus
-Mon	1 DSA pattern or walkthrough
-Wed	Rust mini drill or project
-Fri	Retest or disguised interview question
-Weekend	Skip or review summary (only if free)
+### ⏳ Suggested Weekly Flow (if time is tight)
+Day	    --------------- Focus
+Mon	    --------------- 1 DSA pattern or walkthrough
+Wed	    --------------- Rust mini drill or project
+Fri	    --------------- Retest or disguised interview question
+Weekend	--------------- Skip or review summary (only if free)
