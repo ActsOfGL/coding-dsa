@@ -45,7 +45,7 @@ mod tests {
     }
 
     #[test]
-    fn two_elements_warm_then_cool() {
+    fn test_next_larger_element_distances_two_elements_warm_then_cool() {
         let temps: Vec<i32> = vec![5, 6];
         let expected: Vec<i32> = vec![1, 0]; // day 0 waits 1 day, day 1 has no warmer day
         assert_eq!(next_larger_element_distances(&temps), expected);
