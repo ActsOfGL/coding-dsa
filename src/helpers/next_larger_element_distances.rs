@@ -22,7 +22,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn example_case() {
+    fn test_next_larger_element_distances_example_case() {
         let temps: Vec<i32> = vec![73, 74, 75, 71, 69, 72, 76, 73];
         let expected: Vec<i32> = vec![1, 1, 4, 2, 1, 1, 0, 0];
         assert_eq!(next_larger_element_distances(&temps), expected);
