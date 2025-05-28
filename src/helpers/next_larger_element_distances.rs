@@ -29,7 +29,7 @@ mod tests {
     }
 
     #[test]
-    fn strictly_decreasing() {
+    fn test_next_larger_element_distances_strictly_decreasing() {
         let temps: Vec<i32> = vec![5, 4, 3, 2, 1];
         // No future day is ever warmer
         let expected: Vec<i32> = vec![0, 0, 0, 0, 0];
