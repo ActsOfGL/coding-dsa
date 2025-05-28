@@ -37,7 +37,7 @@ mod tests {
     }
 
     #[test]
-    fn all_equal() {
+    fn test_next_larger_element_distances_all_equal() {
         let temps: Vec<i32> = vec![7, 7, 7, 7];
         // All days have the same temperature, so no warmer day
         let expected: Vec<i32> = vec![0, 0, 0, 0];
