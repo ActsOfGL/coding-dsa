@@ -25,6 +25,7 @@ Here’s what I recommend, tailored to your current state:
 
 ===========================================================
 
+
 ## 🧱 Phase 1: Recalibrate the Foundation (Sliding Window + Monotonic Deque)
     Goal: Master subarray patterns with min/max range control.
 
