@@ -63,7 +63,7 @@ mod tests {
     }
 
     #[test]
-    fn empty_input() {
+    fn test_next_larger_element_distances_empty_input() {
         let temps: Vec<i32> = vec![];
         let expected: Vec<i32> = vec![];
         assert_eq!(next_larger_element_distances(&temps), expected);
