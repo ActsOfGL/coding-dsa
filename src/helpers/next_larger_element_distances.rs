@@ -56,7 +56,7 @@ mod tests {
     }
 
     #[test]
-    fn single_element() {
+    fn test_next_larger_element_distances_single_element() {
         let temps: Vec<i32> = vec![42];
         let expected: Vec<i32> = vec![0]; // no future days at all
         assert_eq!(next_larger_element_distances(&temps), expected);
