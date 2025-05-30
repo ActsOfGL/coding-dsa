@@ -62,4 +62,11 @@ mod tests {
             0,
         );
     }
+
+    #[test]
+    fn test_max_sum_with_prefix_sum_empty_array() {
+        let nums = vec![];
+        let k = 15;
+        assert_eq!(max_sum_with_prefix_sum(&nums, k), 0);
+    }
 }
