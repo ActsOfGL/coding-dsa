@@ -75,4 +75,11 @@ mod tests {
             ),
         );  
     }
+
+    #[test]
+    fn test_has_subarray_with_sum_multiple_of_k_empty_array() {
+        let nums = vec![];
+        let target = 4;
+        assert!(!has_subarray_with_sum_multiple_of_k(&nums, target));
+    }
 }
