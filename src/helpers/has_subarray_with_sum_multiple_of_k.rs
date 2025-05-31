@@ -80,6 +80,11 @@ mod tests {
     fn test_has_subarray_with_sum_multiple_of_k_empty_array() {
         let nums: Vec<i32> = vec![];
         let target: i32 = 4;
-        assert!(!has_subarray_with_sum_multiple_of_k(&nums, target));
+        assert!(
+            !has_subarray_with_sum_multiple_of_k(
+                &nums,
+                target,
+            ),
+        );
     }
 }
