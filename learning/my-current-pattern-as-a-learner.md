@@ -10,7 +10,7 @@ As your coach and mentor, I see this pattern in your situation:
 
 So we’ll walk the code together slowly, like stretching your coding muscles before lifting.
 
-This helps you:
+### 🛠️ This helps you:
 ✅ Rebuild confidence
 ✅ Re-anchor the Rust syntax
 ✅ Lower the pressure before writing solo
