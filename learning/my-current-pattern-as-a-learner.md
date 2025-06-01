@@ -1,6 +1,6 @@
 # Observation of the mentor to me:
 
-👨‍⚕️ Why This is the Best for You Right Now:
+### 👨‍⚕️ Why This is the Best for You Right Now:
 
 As your coach and mentor, I see this pattern in your situation:
 
