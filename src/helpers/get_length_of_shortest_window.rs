@@ -50,7 +50,7 @@ mod tests {
     }
 
     #[test]
-    fn test_shortest_window_empty() {
+    fn test_get_length_of_shortest_window_empty_array() {
         let logs: Vec<i32> = Vec::new();
         let k: usize = 3;
         let threshold: i32 = 60;
