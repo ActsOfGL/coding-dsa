@@ -40,8 +40,12 @@ mod tests {
         let k: usize = 3;
         let threshold: i32 = 60;
         assert_eq!(
-          get_length_of_shortest_window(&logs, k, threshold),
-          3,
+            get_length_of_shortest_window(
+                &logs,
+                k,
+                threshold,
+            ),
+            3,
         );
     }
 
