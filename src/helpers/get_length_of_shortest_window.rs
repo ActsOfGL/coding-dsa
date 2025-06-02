@@ -35,7 +35,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_shortest_window() {
+    fn test_get_length_of_shortest_window_shortest_window() {
         let logs: Vec<i32> = vec![20, 30, 50, 90, 80, 20];
         let k: usize = 3;
         let threshold: i32 = 60;
