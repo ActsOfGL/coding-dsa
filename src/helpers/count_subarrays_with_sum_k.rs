@@ -85,4 +85,11 @@ mod tests {
             1
         );
     }
+
+    #[test]
+    fn test_count_subarrays_with_sum_k_positive_only_empty_array() {
+        let logs = vec![];
+        let k = 10;
+        assert_eq!(count_subarrays_with_sum_k_positives_only(&logs, k), 0);
+    }
 }
