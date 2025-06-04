@@ -101,7 +101,7 @@ mod tests {
 
     #[test]
     fn test_count_subarrays_with_sum_k_any_values_empty_array() {
-        let logs = vec![];
+        let logs: Vec<i32> = vec![];
         let k = 10;
         assert_eq!(count_subarrays_with_sum_k_any_values(&logs, k), 0);
     }
