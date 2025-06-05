@@ -25,3 +25,16 @@ pub fn count_subarrays_with_exact_sum_and_min_len(
     }
     count
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_count_subarrays_with_exact_sum_and_min_len() {
+        let nums = vec![1, 2, 3, 4, 5];
+        let k = 7;
+        let min_len = 2;
+        assert_eq!(count_subarrays_with_exact_sum_and_min_len(&nums, k, min_len), 1);
+    }
+}
