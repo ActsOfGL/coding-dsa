@@ -44,4 +44,12 @@ mod tests {
             1,
         );
     }
+
+    #[test]
+    fn test_count_subarrays_with_exact_sum_and_min_len_multiple_cases() {
+        let nums = vec![1, 2, 3, 3, 4, 5, 4, 3, 3, 2, 2, 1, 1, 1];
+        let k = 2;
+        let min_len = 2;
+        assert_eq!(count_subarrays_with_exact_sum_and_min_len(&nums, k,min_len), 2);
+    }
 }
