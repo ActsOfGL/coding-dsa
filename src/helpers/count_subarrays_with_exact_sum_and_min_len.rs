@@ -50,6 +50,13 @@ mod tests {
         let nums: Vec<i32> = vec![1, 2, 3, 3, 4, 5, 4, 3, 3, 2, 2, 1, 1, 1];
         let k: i32 = 2;
         let min_len: usize = 2;
-        assert_eq!(count_subarrays_with_exact_sum_and_min_len(&nums, k,min_len), 2);
+        assert_eq!(
+            count_subarrays_with_exact_sum_and_min_len(
+                &nums,
+                k,
+                min_len,
+            ),
+            2,
+        );
     }
 }
