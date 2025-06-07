@@ -62,7 +62,7 @@ mod tests {
 
     #[test]
     fn test_count_subarrays_with_exact_sum_and_min_len_empty_array() {
-        let nums = vec![];
+        let nums: Vec<i32> = vec![];
         let k = 2;
         let min_len = 2;
         assert_eq!(count_subarrays_with_exact_sum_and_min_len(&nums,k,min_len), 0);
