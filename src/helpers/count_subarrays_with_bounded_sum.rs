@@ -50,7 +50,7 @@ mod tests {
     fn test_count_subarrays_with_bounded_sum_empty_array() {
         let nums: Vec<i32> = vec![];
         let k: i32 = 5;
-        let min_len = 2;
+        let min_len: usize = 2;
         assert_eq!(count_subarrays_with_bounded_sum(&nums, k, min_len), 0);
     }
 }
