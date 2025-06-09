@@ -51,6 +51,13 @@ mod tests {
         let nums: Vec<i32> = vec![];
         let k: i32 = 5;
         let min_len: usize = 2;
-        assert_eq!(count_subarrays_with_bounded_sum(&nums, k, min_len), 0);
+        assert_eq!(
+            count_subarrays_with_bounded_sum(
+                &nums,
+                k,
+                min_len,
+            ),
+            0,
+        );
     }
 }
