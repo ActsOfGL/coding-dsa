@@ -65,7 +65,10 @@ mod tests {
         let nums: Vec<i32> = vec![42];
         let distance: i32 = 1;
         assert_eq!(
-            has_nearby_duplicate(&nums, distance),
+            has_nearby_duplicate(
+                &nums,
+                distance,
+            ),
             false,
         );
     }
