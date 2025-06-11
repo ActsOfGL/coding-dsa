@@ -25,12 +25,11 @@ mod tests {
     fn test_has_nearby_duplicate_true() {
         let nums: Vec<i32> = vec![1, 0, 1, 1];
         let distance: i32 = 1;
-        assert_eq!(
+        assert!(
             has_nearby_duplicate(
                 &nums,
                 distance,
             ),
-            true,
         );
     }
 
