@@ -49,12 +49,11 @@ mod tests {
     fn test_has_nearby_duplicate_empty_array() {
         let nums: Vec<i32> = Vec::new(); // vec![];
         let distance: i32 = 1;
-        assert_eq!(
-            has_nearby_duplicate(
+        assert!(
+            !has_nearby_duplicate(
                 &nums,
                 distance,
             ),
-            false,
         );
     }
 
