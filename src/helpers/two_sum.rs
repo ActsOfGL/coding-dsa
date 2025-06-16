@@ -35,7 +35,7 @@ mod tests {
         let nums: Vec<i32> = vec![1, 2, 3];
         let target: i32 = 10;
         let result: Option<(usize, usize)> = two_sum(&nums, target);
-        let expected = None;
+        let expected: Option<(usize, usize)> = None;
         assert_eq!(result, expected);
     }
 
