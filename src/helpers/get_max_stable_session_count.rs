@@ -39,11 +39,11 @@ mod tests {
         let logs: Vec<i32> = Vec::new();
         let threshold: i32 = 40;
         assert_eq!(
-          get_max_stable_session_count(
-            &logs,
-            threshold,
-          ),
-          0,
+            get_max_stable_session_count(
+                &logs,
+                threshold,
+            ),
+            0,
         );
     }
 }
