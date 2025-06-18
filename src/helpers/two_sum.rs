@@ -45,7 +45,7 @@ mod tests {
         let target: i32 = 10;
         let result: Option<(usize, usize)> = two_sum(&nums, target);
         let expected = None;
-        assert_eq!(result, None);
+        assert_eq!(result, expected);
     }
 
     #[test]
