@@ -41,7 +41,7 @@ mod tests {
 
     #[test]
     fn test_two_sum_empty_array() {
-        let nums: Vec<i32> = vec![];
+        let nums: Vec<i32> = Vec::new();
         let target: i32 = 10;
         let result: Option<(usize, usize)> = two_sum(&nums, target);
         assert_eq!(result, None);
