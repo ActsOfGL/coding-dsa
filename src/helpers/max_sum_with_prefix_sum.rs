@@ -59,10 +59,7 @@ mod tests {
         let nums: Vec<i32> = Vec::new();
         let k: usize = 15;
         assert_eq!(
-            max_sum_with_prefix_sum(
-                &nums,
-                k,
-            ),
+            max_sum_with_prefix_sum(&nums, k),
             0,
         );
     }
