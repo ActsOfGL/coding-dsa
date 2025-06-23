@@ -30,10 +30,7 @@ mod tests {
         let k: usize = 3;
         let output = max_sum_with_prefix_sum(&nums, k);
         let expected = 9;
-        assert_eq!(
-            max_sum_with_prefix_sum(&nums, k),
-            9,
-        );
+        assert_eq!(output, expected);
     }
 
     #[test]
