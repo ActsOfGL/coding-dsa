@@ -37,8 +37,8 @@ mod tests {
     fn test_max_sum_with_prefix_sum_zero_target() {
         let nums: Vec<i32> = vec![1, 2, 1, 5, 1, 3, 1];
         let k: usize = 0;
-        let output = max_sum_with_prefix_sum(&nums, k);
-        let expected = 0;
+        let output: i32 = max_sum_with_prefix_sum(&nums, k);
+        let expected: i32 = 0;
         assert_eq!(
             output,
             expected,
