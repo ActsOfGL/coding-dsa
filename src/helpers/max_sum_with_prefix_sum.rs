@@ -39,10 +39,7 @@ mod tests {
         let k: usize = 0;
         let output: i32 = max_sum_with_prefix_sum(&nums, k);
         let expected: i32 = 0;
-        assert_eq!(
-            output,
-            expected,
-        );
+        assert_eq!(output, expected);
     }
 
     #[test]
