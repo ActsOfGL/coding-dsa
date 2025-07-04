@@ -39,7 +39,7 @@ mod tests {
         let k: usize = 0;
         let output = max_sum_with_prefix_sum(&nums, k);
         assert_eq!(
-            max_sum_with_prefix_sum(&nums, k),
+            output,
             0,
         );
     }
