@@ -50,7 +50,7 @@ mod tests {
         let expected = 0;
         assert_eq!(
             output,
-            0,
+            expected,
         );
     }
 
