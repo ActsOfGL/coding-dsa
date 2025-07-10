@@ -47,6 +47,7 @@ mod tests {
         let nums: Vec<i32> = vec![1, 2, 1, 5, 1, 3, 1];
         let k: usize = 15;
         let output = max_sum_with_prefix_sum(&nums, k);
+        let expected = 0;
         assert_eq!(
             output,
             0,
