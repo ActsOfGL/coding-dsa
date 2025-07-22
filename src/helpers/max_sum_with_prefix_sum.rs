@@ -55,6 +55,7 @@ mod tests {
     fn test_max_sum_with_prefix_sum_empty_array() {
         let nums: Vec<i32> = Vec::new();
         let k: usize = 15;
+        let output = max_sum_with_prefix_sum(&nums, k);
         assert_eq!(
             max_sum_with_prefix_sum(&nums, k),
             0,
