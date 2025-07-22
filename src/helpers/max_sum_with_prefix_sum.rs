@@ -56,6 +56,7 @@ mod tests {
         let nums: Vec<i32> = Vec::new();
         let k: usize = 15;
         let output = max_sum_with_prefix_sum(&nums, k);
+        let expected = 0;
         assert_eq!(
             max_sum_with_prefix_sum(&nums, k),
             0,
