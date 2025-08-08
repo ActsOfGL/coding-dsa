@@ -66,13 +66,7 @@ mod tests {
         let k: usize = 3;
         let output: i32 = max_sum_sliding_window(&nums, k);
         let expected: i32 = 9;
-        assert_eq!(
-            max_sum_sliding_window(
-                &nums,
-                k,
-            ),
-            9,
-        );
+        assert_eq!(output, expected);
     }
 
     #[test]
