@@ -65,7 +65,7 @@ mod tests {
         let nums: Vec<i32> = vec![1, 2, 1, 5, 1, 3, 1];
         let k: usize = 3;
         let output: i32 = max_sum_sliding_window(&nums, k);
-        let expected = 9;
+        let expected: i32 = 9;
         assert_eq!(
             max_sum_sliding_window(
                 &nums,
